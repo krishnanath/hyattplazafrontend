@@ -1,0 +1,170 @@
+<div class="shop-header container">
+  <div class="header-links row">
+    <div class="link">
+      <span class="link-icon"
+        ><img src="../../../../assets/icons/location.png"
+      /></span>
+      <span class="link-text">STORE LOCATION</span>
+    </div>
+    <div class="link">
+      <span class="link-icon"
+        >
+        <!-- <img src="../../../../assets/icons/clock.png"/> -->
+        <img src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/icons/earth.svg"/>
+      </span>
+      <span class="link-text"><a class="urls" target="_blank" href="https://www.google.com/maps/dir//25.2568179,51.4374085/@25.256818,51.437408,15z?hl=en-GB">LOCATION</a></span>
+    </div>
+    <div class="link">
+      <span class="link-icon"
+        ><img src="../../../../assets/icons/pointer.png"
+      /></span>
+      <span class="link-text"><a class="urls" href="/leasing"> LEASING</a></span>
+    </div>
+    <div class="link">
+      <span class="link-icon"
+        ><img src="../../../../assets/icons/gift.png"
+      /></span>
+      <span class="link-text"><a class="urls" href="/gift-voucher">GIFT</a></span>
+    </div>
+    <div class="link-icon-section">
+      <span class="link-icon"
+        ><a class="urls" href="/contact">
+        <img src="../../../../assets/icons/lnr-phone-handset.png"
+      /></a></span>
+      <span class="link-icon"
+        ><img src="../../../../assets/icons/header-separator.png"
+      /></span>
+      <span class="link-text"><a class="urls" href="tel:44999666">44999666</a></span>    
+      <!-- <span class="link-icon"><img src="../../../../assets/icons/hindi.png"></span> -->
+      <!-- <a class="link-text" (click)="changeLang('en')"> English </a> |
+      <a (click)="changeLang('ar')">
+        <img src="../../../../assets/icons/hindi.png" />
+      </a> -->
+    </div>
+  </div>
+  <div class="shop-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="menu-logo" >
+            <a class="urls" href="/">
+            <img
+              class="logo-img"
+              src="assets/hyattplaza-images/new-images/logo-plaza.png"
+              style="width: 100%;"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col-8">
+          <!-- <div class="menus" *ngIf="topMenuLoaded">
+            <div class="menu" *ngFor="let menu of topMenu.data;">
+              <a href=""> {{ menu.serviceName }} </a>
+            </div>         
+          </div> -->
+
+          <div class="menu-primary">
+            <ul>
+              <li class="item cool-link" *ngFor="let menu of topMenu">
+                <a class="nav-hed" href="{{ menu.menuKey }}">{{
+                  menu.menuName
+                }}</a>
+                <div
+                  class="sub"
+                  *ngIf="
+                    menu.children.categories ||
+                    menu.children.offers ||
+                    menu.children.events ||
+                    menu.children.brands
+                  "
+                >
+                <div class="sub-top">
+                  <div class="colums" style="text-align:left"  *ngIf="menu.children.categories">
+                    <ul>
+                      <li *ngFor="let subMenu of menu.children.categories">
+                        <a>{{ subMenu.name }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="colums" style="text-align:left"  *ngIf="menu.children.brands">
+                    <ul>
+                      <li *ngFor="let brand of menu.children.brands">
+                        <a>{{ brand.name }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="colums" style="text-align:left"  style="border:0cm; padding-left: 11px;" *ngIf="menu.children.offers">
+                    <ul>
+                      <li *ngFor="let offer of menu.children.offers">
+                        <figure>
+                          <img
+                            [src]="offer.offer_image"
+                            width="275"
+                            height="133"
+                            alt="image"
+                          />
+                        </figure>
+                        <figcaption class="figcaption-date">
+                          <a href="#"
+                            >{{ offer.start_date }} - {{ offer.end_date }}</a
+                          >
+                        </figcaption>
+                        <figcaption class="figcaption-title">
+                          <a href="#">{{ offer.title }}</a>
+                        </figcaption>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="colums last-colum" style="border:0cm;  padding-left: 11px;" *ngIf="menu.children.events">
+                    <ul>
+                      <li *ngFor="let event of menu.children.events">
+                        <figure>
+                          <img
+                            [src]="event.event_image"
+                            width="275"
+                            height="133"
+                            alt="image"
+                          />
+                        </figure>
+                        <figcaption class="figcaption-date">
+                          <a href="#"
+                            >{{ event.start_date }} - {{ event.end_date }}</a
+                          >
+                        </figcaption>
+                        <figcaption class="figcaption-title">
+                          <a href="#">{{ event.title }}</a>
+                        </figcaption>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2 search-bar">
+          <div class="menu menu-search">
+            <input type="text" class="search-box" value="Search" />
+            <img src="/assets/icons/menu-search.png" class="menu-search-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <div class="mb-cntr">
+      <div class="mb-logo">
+        <img
+          class="mb-logo-img"
+          src="assets/hyattplaza-images/new-images/logo-plaza.png"
+          style="width: 100%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>

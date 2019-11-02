@@ -1,0 +1,37 @@
+<div class="page-banner">
+  <img [src]="banner" class="banner-image" />
+  <div class="banner-box-shadow">
+    <div class="banner-title">
+      {{pageTitle}}
+    </div>
+  </div>
+</div>
+<div class="container vip-card-title" style="padding-top: 30px;">
+  <h2>ONGOING OFFERS</h2>
+</div>
+<div class="container padLR45">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" *ngFor="let offer of offers">
+      <div class="row cont">
+        <div class="card">
+          <div class="image-div">
+            <img
+              [src]=offer.offer_image
+              class="card-img-top img-height"
+              alt="..."
+              (click)="open(offer.offer_image, offer.title, offer.subtitle, offer.description, offer.owner_id)"
+            />
+            <span class="name-shade">{{offer.title}}</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{offer.subtitle}}</h5>
+            <hr class="m-0" />
+            <p class="card-text">
+              {{offer.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

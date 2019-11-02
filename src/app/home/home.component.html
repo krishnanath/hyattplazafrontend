@@ -1,0 +1,155 @@
+<div class="home-banners">
+ <ngb-carousel *ngIf="topBannerLoaded" (slide)="onSlide($event)" [showNavigationIndicators]="showNavigationIndicators">
+
+  <div *ngFor="let banner of topBanners.data;let i=index">
+    <ng-template ngbSlide id="home-banner-{{i}}">
+      <img [src]="banner.image" class="banner-image" [alt]="banner.title_en">
+      <div class="home-banner-shadow"></div>
+      <div class="carousel-caption">
+        <p class="banner-tag font-marcellus ">{{banner.type}}</p>
+        <p class="banner-title font-marcellus ">{{banner.title}}</p>
+        <p class="banner-description">{{banner.desc}}</p>
+        <div class="link-button button-common-style">Learn More</div>
+      </div>
+    </ng-template>
+  </div>
+</ngb-carousel>
+  <div class="banner-timings">
+    <div class="timing-records container">
+      <div class="row">
+        <div class="col record" *ngFor="let shop of shopOpenHours;let i=index">
+          <div class="timing-title">{{shop.shopName}}</div>
+          <div class="timing-schedule">{{shop.openHours}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-images container" *ngIf="homeCategories.data">
+  <div class="row home-mb-section ">
+    <div class="col-7 home-mb-section-sub">
+      <img src="{{ homeCategories.data[0].image }}">
+      <div class="home-image-content" style="background-image: url('/assets/icons/home-gradient-1.png');background-size: cover;">
+        <div class="image-caption image-caption-large">
+          <p class="tag">{{ homeCategories.data[0].link }}</p>
+          <p class="title" innerHTML="{{ homeCategories.data[0].name }}"></p>
+          <div class="link-button button-common-style"><a routerLink="/shopping">EXPLORE MORE</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5 home-mb-section-sub">
+      <img src="{{ homeCategories.data[1].image }}">
+      <div class="home-image-content" style="background-image: url('/assets/icons/home-gradient-2.png');background-size: cover;">
+        <div class="image-caption image-caption-small">
+          <p class="tag">{{ homeCategories.data[1].link }}</p>
+          <p class="title" innerHTML="{{ homeCategories.data[1].name }}"></p>
+          <div class="link-button button-common-style"><a routerLink="/dining">EXPLORE MORE</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row home-mb-section">
+    <div class="col-5 home-mb-section-sub ">
+      <img src="{{ homeCategories.data[2].image }}">
+      <div class="home-image-content" style="background-image: url('/assets/icons/home-gradient-2.png');background-size: cover;">
+        <div class="image-caption image-caption-small">
+          <p class="tag">{{ homeCategories.data[2].link }}</p>
+          <p class="title" innerHTML="{{ homeCategories.data[2].name }}"></p>
+          <div class="link-button button-common-style"><a routerLink="/events">EXPLORE MORE</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-7 home-mb-section-sub">
+      <img src="{{ homeCategories.data[3].image }}">
+      <div class="home-image-content" style="background-image: url('/assets/icons/home-gradient-1.png');background-size: cover;">
+        <div class="image-caption image-caption-large">
+          <p class="tag">{{ homeCategories.data[3].link }}</p>
+          <p class="title" innerHTML="{{ homeCategories.data[3].name }}"></p>
+          <div class="link-button button-common-style"><a routerLink="/offers">EXPLORE MORE</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row home-mb-section ">
+    <div class="col-12 home-mb-section-sub ">
+      <img src="{{ homeCategories.data[4].image }}">
+      <div class="home-image-content" style="background-image: url('/assets/icons/home-gradient-3.png');background-size: cover;">
+        <div class="image-caption image-caption-elarge">
+          <p class="tag">{{ homeCategories.data[4].link }}</p>
+          <p class="title" innerHTML="{{ homeCategories.data[4].name }}"></p>
+          <div class="link-button button-common-style" ><a routerLink="/entertainment">EXPLORE MORE</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="news-events container">
+  <div class="news-title">
+    NEWS & EVENTS
+  </div>
+  <!-- <div class="records row">
+    <div class="record col-3" *ngFor="let event of events">
+      <img [src]="event.image" class="event-image">
+      <div class="event-details">
+        <div class="event-title">
+          {{event.title}}
+        </div>
+        <div class="event-date">
+          {{event.date}}
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="events-gallery mob-hide" *ngIf="newsDataLoaded">
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+      <div class="width" ngxSlickItem *ngFor="let news of newsData" class="slide record">
+        <img [src]="news.news_image" class="event-image common-img-height" alt="{{news.title}}" width="100%">
+        <div class="event-details">
+          <div class="event-title">
+            {{news.title}}
+          </div>
+          <div class="event-date">
+            {{news.create_date}}
+          </div>
+        </div>
+      </div>
+    </ngx-slick>
+  </div>
+
+  <!-- MOBILE EVENTS GALLERY KRISHNANATH STYLE -->
+
+  <div class="events-gallery desk-hide" *ngIf="newsDataLoaded">
+      <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfigmobile" (afterChange)="afterChange($event)">
+        <div ngxSlickItem *ngFor="let news of newsData" class="slide record">
+          <img [src]="news.news_image" class="event-image" alt="{{news.title}}" width="100%">
+          <div class="event-details">
+            <div class="event-title">
+              {{news.title}}
+            </div>
+            <div class="event-date">
+              {{news.create_date}}
+            </div>
+          </div>
+        </div>
+      </ngx-slick>
+    </div>
+
+  <!-- END MOBLIE SLIDER KRISHNA -->
+
+</div>
+
+<div class="gallery mob-hide" *ngIf="galleryDataLoaded">
+  <div class="gallery-title">
+    GALLERY
+  </div>
+  <div class="records">
+    <div class="column" *ngFor="let record of gallery">
+      <img [src]="image" class="gallery-image" *ngFor="let image of record">
+    </div>
+  </div>
+</div>
+
+
+ 

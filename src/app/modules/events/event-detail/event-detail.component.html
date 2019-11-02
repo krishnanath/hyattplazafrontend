@@ -1,0 +1,106 @@
+<div class="page-banner">
+    <!-- <img src="/assets/images/cat-01.png" class="banner-image"> -->
+  <img src="assets/hyattplaza-images/events/banner.png" class="banner-image original-size" >  
+  
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+      EVENT DETAIL
+      </div>
+    </div>
+     
+  </div>
+
+
+  <div class="s-b-s">
+
+      <div class="item brd">
+        <h3 class="ev-hed" style="text-align:center;"><b>{{events[0].events_heading}} </b> </h3>
+        <div class="in-li-mr" style="text-align:left;">
+            <p class="inli"><span class="lnr lnr-calendar-full">&nbsp;{{events[0].event_date}}&nbsp; &nbsp; |</span></p> 
+       <p class="inli"><span class="lnr lnr-clock"> {{events[0].event_time}} &nbsp; &nbsp; |</span></p>
+       <p class="inli"><span class="lnr lnr-map-marker"> {{events[0].event_location}}</span></p>
+      
+     </div>
+     <p>{{events[0].events_details}}</p>
+     <div class="icon-sh" style="text-align:left;">
+       <h6><b>Share: &nbsp;</b>  
+     
+        <a href="https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwildherbstechnologies.com%2Fdemos%2Fhyattplaza-beta-version%2Fevents&amp;linkname=HyattPlaza%20events" target="_blank"> <img class="icon" src="assets/hyattplaza-images/social-media-icons/facebook.png"></a>
+        <a href="https://www.addtoany.com/add_to/whatsapp?linkurl=http%3A%2F%2Fwildherbstechnologies.com%2Fdemos%2Fhyattplaza-beta-version%2Fevents&amp;linkname=HyattPlaza%20events" target="_blank">
+
+        <img class="icon"  src="assets/hyattplaza-images/social-media-icons/whatsapp.png"></a>
+         <a href="https://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwildherbstechnologies.com%2Fdemos%2Fhyattplaza-beta-version%2Fevents&amp;linkname=HyattPlaza%20events" target="_blank">
+         
+         <img class="icon"  src="assets/hyattplaza-images/social-media-icons/twitter.png">
+      </a>
+      <a href="https://www.instagram.com/hyattplaza/" target="_blank">
+         <img class="icon"  src="assets/hyattplaza-images/social-media-icons/instagram.png">
+         </a>
+     
+         <!-- <i class="fab fa-whatsapp-square"></i>
+         <i class="fab fa-facebook"></i>
+         <i class="fab fa-twitter"></i>
+         <i class="fab fa-instagram"></i> -->
+       </h6>
+     </div>
+        <div class="bt-cen" style="text-align:center;">
+         <button class="btn-reg">REGISTER NOW</button>
+     
+     </div>
+     <div class="btm">
+        <h4 class="hed-img" style="text-align:left;">Images</h4>
+        <div class="categories-slider">
+           <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+             <div ngxSlickItem *ngFor="let category of categories" class="slide record">
+               <img [src]="category.image" class="category-image">
+       
+               <div class="category-details">
+                
+               </div>
+               <div class="category-title">
+                   {{category.title}}
+                 </div>
+             </div>
+           </ngx-slick>
+         </div>
+       </div>
+      
+     </div>
+     
+      
+     
+     <div class="item2">
+         
+     
+     
+       <div class="img1">
+           <div style="text-align:center;">
+         <img class="ev-img" src="{{events_images[0].event_img}}" style="width:100%;" >
+         
+            
+           <div class="text-block" style="text-align:center;">
+          
+             <button class="ct-bt" routerLink="/vip-card">Buy Online</button>
+                  
+             </div>
+            
+         </div>
+       </div>
+     
+       <br>
+     
+       <div class="img2"> 
+         <img class="ev-img" src="{{events_images[0].event_map}}" style="width:100%;" >
+       </div>
+     
+     </div>
+       </div>
+     
+     
+
+ 
+
+       <!-- ALERT DIVISION -->
+ 
+ 
+<!-- END ALERT DIVISION -->

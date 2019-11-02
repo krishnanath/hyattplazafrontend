@@ -1,0 +1,36 @@
+<div class="page-banner">
+  <img src="/assets/images/cat-01.png" class="banner-image" />
+  <div class="banner-box-shadow">
+    <div class="banner-title">
+      LOREM IPSUM
+    </div>
+  </div>
+</div>
+<div class="container vip-card-title" style="padding-top: 30px;">
+  <h2>Offers for vip card members</h2>
+</div>
+<div class="container padLR45">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" *ngFor="let vipcard of vipcards">
+      <div class="row cont">
+        <div class="card">
+          <div class="image-div">
+            <img
+              [src]=vipcard.offer_image
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="name-shade">{{vipcard.store_name}}</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{vipcard.title}}</h5>
+            <hr class="m-0" />
+            <p class="card-text">
+              {{vipcard.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

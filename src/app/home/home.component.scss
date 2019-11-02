@@ -1,0 +1,371 @@
+.home-banners {
+    
+    .banner-image {
+        width:100%;
+    }
+    .home-banner-shadow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/icons/Rectangle_137.png');
+        background-size: cover;
+    }
+    .carousel-caption {
+        top:20%;
+        left:15%;
+        text-align: left;
+
+        .banner-tag {
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 22px;
+            font-weight: 400;
+            text-transform: uppercase;
+            
+        }
+        .banner-title {
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 65px;
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom:20px;
+        }
+        .banner-description {
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom:20px;
+        }
+        p {
+            margin-bottom:10px;
+        }
+        .link-button {
+            // width: 260px;
+            // height: 50px;
+            border: 1px solid #ffffff;
+            margin-block-end: auto;
+            text-align: center;
+            padding:10px;
+            font-family: Akkurat;
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+    .banner-timings {
+        display: block;
+        position: relative;
+        .timing-records {
+            background-image: url('/assets/icons/Rectangle_141-home.png');
+            position: absolute;
+            bottom:0;
+            width:100%;
+            height: 60px;
+            .row {
+                margin-right:0;
+                margin-left:0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                opacity: 0.85;
+                .record {
+                    border-right: 1px solid #ffffff;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top:10px;
+                }
+            }
+            .timing-title {
+                color: #ffffff;
+                font-family: Akkurat;
+                font-size: 22px;
+                font-weight: 400;
+                text-align: center;
+            }
+            .timing-schedule {
+                color: #ffffff;
+                font-family: Akkurat;
+                font-size: 15px;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+}
+.home-images {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .col-5, .col-7, .col, .col-12 {
+        padding: 0px;
+        border:1px solid #ffffff;
+    }
+    .row {
+        margin:0px;
+    }
+}
+.home-image-content {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+
+    .image-caption {
+        
+        .tag {
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .title {
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 42px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        .link-button {
+            // width: 260px;
+            // height: 50px;
+            border: 2px solid #ffffff;
+            margin-block-end: auto;
+            text-align: center;
+            padding:10px;
+            color: #ffffff;
+            font-family: Akkurat;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+    .image-caption-small {
+        display: inline-block;
+        padding-left:20%;
+        padding-top:42%;
+    }
+    .image-caption-large {
+        display: inline-block;
+        padding-left:15%;
+        padding-top:30%;
+    }
+    .image-caption-elarge {
+        display: inline-block;
+        padding-left:8%;
+        padding-top:20%;
+    }
+}
+.news-events {
+    margin:40px 0;
+    width:100%;
+    text-align: center;
+
+    .news-title {
+        color: #000000;
+        font-family: Marcellus;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .records {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .record {
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+            background-color: #ffffff;
+            padding:0px;
+            margin:20px;
+        }
+        .record:hover {
+            box-shadow: 0 3px 50px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+        }
+        .event-image {
+            width:100%;
+        }
+        .event-details {
+            padding:30px 10px 30px 10px;
+            .event-title {
+                color: #000000;
+                font-family: Akkurat;
+                // font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 1.35px;
+                float:left;
+                margin-bottom:20px;
+            }
+            .event-date {
+                color: #000000;
+                font-family: Akkurat;
+                // font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 1.35px;
+                float:right;
+            }
+        }
+    }
+}
+.gallery {
+    margin:40px 0 5px 0;
+    width:100%;
+    text-align: center;
+
+    .gallery-title {
+        color: #000000;
+        font-family: Marcellus;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .records {
+            /* width: 100%; */
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+
+            .column {
+                -ms-flex: 25%; /* IE10 */
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+            }
+            
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width:100%;
+            }
+    }
+}
+.events-gallery {
+    width:70%;
+    display: inline-block;
+    .record {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+        background-color: #ffffff;
+        padding:0px;
+        margin:20px;
+    }
+    .record:hover {
+        box-shadow: 0 3px 50px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+    .event-image {
+        width:100%;
+    }
+    .event-details {
+        padding:30px 10px 30px 10px;
+        .event-title {
+            color: #000000;
+            font-family: Akkurat;
+            // font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 1.35px;
+            float:left;
+            margin-bottom:20px;
+        }
+        .event-date {
+            color: #000000;
+            font-family: Akkurat;
+            // font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 1.35px;
+            float:right;
+        }
+    }
+}
+
+
+
+// KRISHNANATH CUSTOM STYLES
+.timing-records
+{
+    height: 60px !important;
+}
+.timing-title{
+    font-size: 14px !important;
+}
+.timing-schedule{
+    font-size: 12px !important;
+}
+.event-title{
+    text-align: left !important;
+}
+.event-details {
+height: 77px !important;
+overflow-y: hidden; 
+}
+
+@media screen and (max-width: 777px){
+.event-title, .event-date{
+    font-size: 12px !important;
+}
+    .mob-hide{
+        display: none;
+    }
+
+    .home-banners{
+        height: 700px !important;
+        .banner-image{
+            height: 700px;
+        object-fit: cover !important;}
+        .carousel-caption{
+            top:45% !important;
+        }
+    }
+    .timing-records{
+        display: none;
+    }
+.home-mb-section{
+    display: grid !important;
+    grid-template-rows: repeat(1);
+}
+.home-mb-section-sub{
+    max-width: 100% !important;
+    height: 333px !important;
+}
+.image-caption-small, .image-caption-elarge, .image-caption-large{
+    padding-left: 10% !important;
+    padding-top: 27% !important;
+}
+
+}
+
+@media screen and (min-width: 777px){
+    .desk-hide{
+        display: none !important;
+    }
+}
+
+.width {
+    // width: 500px !important;
+}
+// END KRISHNANTH CUSTUM STYLES
+
+.button-common-style:hover{ 
+
+    background: #fff !important;
+    color: #000 !important;
+  
+  }

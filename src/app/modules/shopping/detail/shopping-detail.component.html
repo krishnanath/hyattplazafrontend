@@ -1,0 +1,116 @@
+<div class="page-banner" *ngIf="shopDetail[0]">
+    <img *ngIf="pageBanner" src="{{ (pageBannerLoaded ? pageBanner.cover : '') }}" class="banner-image" />
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+        {{ shopDetail[0].name }}
+      </div>
+    </div>
+  </div>
+    <!-- <div class="shop-deatil-wrapper" *ngIf="shopDetail[0]">
+    <div class="container padLR15">
+      <div class="row">
+        <div class="col-6">
+          <div class="content-box">
+            <h4>{{ shopDetail[0].title }}</h4>
+            <ul class="attractives">
+              <li><i class="fa fa-map-marker"></i> {{ shopDetail[0].location }}</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> {{ shopDetail[0].phone }}</li>
+              <li>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> {{ shopDetail[0].time }}
+              </li>
+            </ul>
+            <p>
+                    {{ shopDetail[0].description }}
+            </p>
+            <div class="shop-image-slider">
+              <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let image of shopDetail[0].Images" class="slide record">
+                  <img src="{{ image.image_name }}" class="category-image">
+                </div>
+              </ngx-slick>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img style="width:100%; padding-bottom: 22px" [src]="shopDetail[0].vip_card" />
+          <br>
+          <img style="width:100%;" [src]="shopDetail[0].map" />
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>  -->
+
+
+
+  <!-- KRISHNA EXPORT PAGE -->
+
+  <div class="s-b-s">
+
+    <div class="item brd">
+      <div class="shp-mar">
+      <h3 class="ev-hed " style="text-align:center;"><b>{{ shopDetail[0].title }}</b> </h3>
+      <div class="in-li-mr" style="text-align:left;">
+        <p class="inli"><i class="fa fa-map-marker"></i> {{ shopDetail[0].location }} &nbsp; |</p>
+         <p class="inli"><i class="fa fa-phone" aria-hidden="true"></i> {{ shopDetail[0].phone }} &nbsp; |</p>
+    
+     <p class="inli"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ shopDetail[0].time }}</p>
+      
+    
+   </div>
+   <p>{{ shopDetail[0].description }}</p>
+   
+   </div>
+   
+  
+   <div class="btm">
+     <h4>Images:</h4>
+      <div class="categories-slider">
+         <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+           <div ngxSlickItem *ngFor="let image of shopDetail[0].Images" class="slide record">
+             <img src="{{ image.image_name }}" class="category-image">
+     
+             <!-- <div class="category-details">
+              
+             </div>
+             <div class="category-title">
+                 {{category.title}}
+               </div> -->
+           </div>
+         </ngx-slick>
+       </div>
+     </div>
+    
+   </div>
+   
+    
+   
+   <div class="item2">
+       
+   
+   
+     <div class="img1">
+         <div style="text-align:center;">
+       <img class="ev-img" [src]="shopDetail[0].vip_card" style="width:100%;" >
+       
+          
+         <div class="text-block" style="text-align:center;">
+        
+           <button class="ct-bt" routerLink="/vip-card">Buy Online</button>
+                
+           </div>
+          
+       </div>
+     </div>
+   
+     <br>
+   
+     <div class="img2"> 
+       <img class="ev-img" [src]="shopDetail[0].map" style="width:100%;" >
+     </div>
+   
+   </div>
+     </div>
+   
+   
+  <!-- END EXPORTED -->

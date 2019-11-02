@@ -1,0 +1,29 @@
+<div class="page-banner">
+        <img src="{{ (pageBannerLoaded ? pageBanner.cover : '') }}" class="banner-image original-size">
+        
+          <div class="banner-box-shadow">
+            <div class="banner-title">
+              {{ (pageBannerLoaded ? pageBanner.title: '') }}
+            </div>
+          </div>           
+</div>
+
+<div class="pad-btm">
+
+<div class="grid-col" *ngIf="albumImagesLoaded">
+        <div *ngFor="let image of albumImages.data; let i=index" class="item">
+            <img
+              class="mens_fasion_img common-img-height"
+              src="{{ image.gallery_image }}"
+              style="width:100%;"
+              (click)="open(i)"
+            />           
+          </div> 
+        <div class="clearfix"></div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+<br>
+<br>
+<br>

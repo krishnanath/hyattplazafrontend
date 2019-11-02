@@ -1,0 +1,360 @@
+.page-banner {
+    display: block;
+    position: relative;
+    .banner-image {
+        width: 100%;
+        height: 333px;
+    }
+    .banner-box-shadow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      // background-image: url('/assets/icons/Rectangle_137-page.png');
+       background-image: url('http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/icons/Rectangle_137.png');
+        
+       background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .banner-title {
+            text-align: center;
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            justify-content: center;
+            max-width: 50%;
+        }
+    }
+}
+
+
+ 
+.categories-slider {
+    width:88%;
+   // height: 122px !important;
+ 
+    display: inline-block;
+    margin-left: 35px;
+    //bottom: 10px;
+    
+    .record {
+        //box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+        background-color: #ffffff;
+        padding:0px;
+        margin:3px;
+        position: relative;
+        display:block;
+    }
+    .category-image {
+        width:100%;
+        height: 122px ;
+        object-fit: cover;
+    }
+}
+
+.s-b-s{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+   // grid-template-rows: 4fr;
+}
+.btn-reg {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    width: 188px;
+    height: 42px;
+    font-size: 1vw;
+}
+.bt-cen{
+
+margin-bottom: 22px;
+}
+
+p, h3 , .btn {
+    font-family: Marcellus;
+}
+
+p{
+    margin-left: 35px;
+    margin-right: 30px;
+}
+h3{
+    margin-top: 14px;
+}
+
+
+.vl {
+    border-left: 1px solid #aaaa;
+    height: 33%;
+    position: absolute;
+    left: 50%;
+   margin-left: 5px;
+    margin-top: 12px;
+    top: 81;
+    bottom: 10;
+  }
+
+  .item2{
+      display: grid;
+      grid-template-rows: repeat(2);
+      margin: 22px 22px 22px 30px;
+  }
+
+  p.inli {
+      font-family: Akkuret-Light;
+      display: inline-block;
+      letter-spacing: 0;
+      font-size: 14px;
+      font-weight: bolder !important;
+       margin: 0px;
+      margin-left: 35px;
+  }
+
+  .in-li-mr {
+       
+    margin: 0;
+  }
+  
+  .lnr {
+    font-weight: bold;
+  }
+
+  .icon-sh {
+      margin-left: 35px;
+  }
+  .fab{
+      margin: 4px;
+  }
+
+ .ev-img{
+     position: relative;
+     height: auto;
+     .rgr {
+        position: absolute;
+        left: 0;
+         
+    }
+      
+ }
+  
+
+ .ev-img {
+     height: 188px;
+ }
+ .btm {
+     bottom: 0 !important;
+     
+ }
+
+ 
+ 
+ 
+ 
+//  TESTBLOCK
+.img1 {
+    position: relative;
+  }
+.text-block {
+    position: absolute;
+    bottom: 25px;
+    left: 36%;
+   right: 36%;
+    
+   
+  }
+
+ 
+.ct-bt {
+    width: 188px;
+    height: 44px;
+   background: transparent;
+    color: #92403b;
+    border: 1px solid #92403b;
+
+}
+
+
+// MEDIA SCREEN IPAD
+@media only screen 
+and (max-width : 1024px) {
+    .banner-title{
+        font-size: 3vw !important;
+    }
+    .ev-hed{
+        font-size: 2.5vw;
+    }
+    .vl {
+        height: 20%;
+    }
+
+    .ct-bt {
+        width: 111px;
+        height: 28px;
+       background: transparent;
+        color: #92403b;
+        border: 1px solid #92403b;
+        font-size: 1vw;
+
+        text-transform: uppercase;
+    
+    }
+    .btn-reg {
+        background: transparent;
+        border: 1px solid black;
+        color: black;
+        width: 111px;
+        height: 28px;
+        font-size: 1vw;
+    }
+    .ev-img {
+        height: 166px;
+    }
+    p.inli{
+        font-size: 9px;
+    }
+
+}
+
+
+.icon{
+    margin: 2px;
+    height: 17px;
+    width: 17px;
+}
+
+.brd{
+    border-right: 1px solid #aaaa !important;
+    margin-top: 3px !important;
+}
+
+
+// IMAGE REZISE
+@media screen and (min-width: 1500px) {
+  
+    .btn-reg{
+        font-size: 14px !important; 
+    }
+  
+    .ev-img {
+        height: 222px !important;
+    }
+
+    .img1, .img2 {
+        width: 77% !important;
+        margin-left: 10% !important;
+    }
+
+
+.btm {
+    padding-top: 8%;
+}
+
+}
+
+// ALERTBOX
+
+.modal-body{
+    padding: 0 !important;
+    margin-top: 11px;
+    margin-left: 22px;
+    margin-right: 22px;
+    
+
+  }
+  .modal-content{
+      border: 1px solid;
+  }
+
+  .table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 0px solid #dee2e6;
+
+}
+.btn-alert {
+    width: 188px;
+    height: 40px;
+    background: black;
+    color: white;
+     
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Choose file";
+    background: white;
+    
+
+}
+ 
+td {
+    width: 155px !important;
+    height: 33px !important;
+     
+}
+
+.al-in{
+    height: 40px;
+}
+
+// END ALERTBOX
+
+
+// SLIDER HEIGHT
+.hed-img{
+    margin-left:6%;
+    font-family: Marcellus;
+}
+
+@media screen and (min-width: 1500px) {
+
+    .hed-img{
+        margin-left:4%;
+    }
+    .category-image{
+        height: 188px !important;
+        object-fit: cover;
+    }
+}
+
+@media only screen 
+and (max-width : 768px) {
+    .text-block {
+        position: absolute;
+        bottom: 25% !important;
+    }
+    .hed-img{
+        margin-left:10%;
+    }
+    .category-image{
+        height: 77px !important;
+    }
+
+
+    // IPAD MEDIA SCREEN
+ 
+.banner-image{
+    height: 255px !important;
+}
+
+  
+}
+// .fb-share-button{
+//     width: 11px !important;
+// }
+
+
+@media only screen 
+and (min-width : 1920px) {
+.ev-hed {
+    margin-top: 5%;
+    text-align: left !important;
+    margin-left: 4%;
+}
+}

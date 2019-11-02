@@ -1,0 +1,108 @@
+
+.con , h4, h3 {
+    text-transform: uppercase;
+    font-family: Marcellus-regular;
+    font-weight: 100;
+
+}
+.jb_det{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+p{
+    font-family: Akkurat-Light;
+   
+}
+
+
+.apply-pos{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 22px;
+}
+ 
+.scrollspy-example{
+
+    height: 666px !important
+}
+
+
+.btn{
+   border: 1px solid black;
+float:  right !important;
+color: black;
+width: 188px;
+}
+ 
+.apl-nw{
+    width: 188px;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    height: 44px;
+}
+.apl-nw:hover{
+    background: black;
+    color: white;
+}
+
+
+// ALERTBOX
+
+.modal-body{
+    padding: 0 !important;
+    margin-top: 11px;
+    margin-left: 22px;
+    margin-right: 22px;
+    
+
+  }
+  .modal-content{
+      border: 1px solid;
+  }
+
+  .table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 0px solid #dee2e6;
+
+}
+.btn-alert {
+    width: 188px;
+    height: 40px;
+    background: black;
+    color: white;
+     
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Choose file";
+    background: white;
+    
+
+}
+ 
+td {
+    width: 155px !important;
+    height: 33px !important;
+     
+}
+
+.al-in{
+    height: 40px;
+}
+
+// END ALERTBOX
+
+.emp-enq{
+    margin-top: 18px;
+    margin-left: 40%;
+    margin-bottom: 22px;
+}
+
+p{
+    font-family: Akkurat !important;
+}

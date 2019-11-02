@@ -1,0 +1,674 @@
+// .page-banner {
+//   display: block;
+//   position: relative;
+//   .banner-image {
+//     width: 100%;
+//   }
+//   .banner-box-shadow {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url("/assets/icons/Rectangle_137-page.png");
+//     background-size: cover;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .banner-title {
+//       text-align: center;
+//       color: #ffffff;
+//       font-family: Marcellus;
+//       font-size: 60px;
+//       font-weight: 400;
+//       text-transform: uppercase;
+//       justify-content: center;
+//       max-width: 50%;
+//     }
+//   }
+// }
+// .shop-deatil-wrapper {
+//   width: 100%;
+//   height: auto;
+//   background: #fff;
+//   padding: 25px 0;
+//   text-align: center;
+//   position: relative;
+
+//   .content-box {
+//     h4 {
+//       font-size: 24px;
+//       text-align: center;
+//       margin: 0;
+//       padding-bottom: 15px;
+//     }
+//     .attractives {
+//       display: inline-block;
+//       list-style: none;
+//       text-decoration: none;
+//       margin: 0;
+//       padding: 0;
+//       margin-bottom: 20px;
+//       li {
+//         float: left;
+//         margin: 0;
+//         padding: 0 15px;
+//         position: relative;
+//       }
+//       li::after {
+//         position: absolute;
+//         content: "";
+//         width: 1px;
+//         height: 80%;
+//         right: 0;
+//         top: 20%;
+//         background: #333;
+//       }
+//       li:last-child:after {
+//         display: none;
+//       }
+//     }
+//     p {
+//       text-align: justify;
+//     }
+    
+//   }
+// }
+// .content-box {
+//   width: 90%;
+//   height: auto;
+//   display: inline-block;
+// }
+
+// .shop-image-slider {
+//   width: 90%;
+//   display: inline-block;
+
+//   .record {
+//     box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+//     background-color: #ffffff;
+//     padding: 0px;
+//     margin: 3px;
+//     position: relative;
+//     display: block;
+//   }
+//   .category-image {
+//     width: 100%;
+//   }
+//   .category-details {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 56px;
+//     -webkit-filter: blur(10px);
+//     -moz-filter: blur(10px);
+//     -o-filter: blur(10px);
+//     -ms-filter: blur(10px);
+//     filter: blur(10px);
+//     background-color: #000000;
+//     opacity: 0.5;
+//   }
+//   .category-title {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 56px;
+//     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+//     color: #ffffff;
+//     font-family: Marcellus;
+//     font-size: 27px;
+//     font-weight: 400;
+//   }
+// }
+// .shop-deatil-wrapper::after{
+//   content: '';
+//   position: absolute;
+//   width: 1px;
+//   height: 100%;
+//   top: 0;
+//   left: 50%;
+//   background:#333;
+// }
+
+
+// KRISHNANATH CREATED STYLES 
+// .page-banner {
+//   display: block;
+//   position: relative;
+//   .banner-image {
+//     width: 100%;
+//   }
+//   .banner-box-shadow {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url("/assets/icons/Rectangle_137-page.png");
+//     background-size: cover;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .banner-title {
+//       text-align: center;
+//       color: #ffffff;
+//       font-family: Marcellus;
+//       font-size: 60px;
+//       font-weight: 400;
+//       text-transform: uppercase;
+//       justify-content: center;
+//       max-width: 50%;
+//     }
+//   }
+// }
+// .shop-deatil-wrapper {
+//   width: 100%;
+//   height: auto;
+//   background: #fff;
+//   padding: 25px 0;
+//   text-align: center;
+//   position: relative;
+
+//   .content-box {
+//     h4 {
+//       font-size: 24px;
+//       text-align: center;
+//       margin: 0;
+//       padding-bottom: 15px;
+//     }
+//     .attractives {
+//       display: inline-block;
+//       list-style: none;
+//       text-decoration: none;
+//       margin: 0;
+//       padding: 0;
+//       margin-bottom: 20px;
+//       li {
+//         float: left;
+//         margin: 0;
+//         padding: 0 15px;
+//         position: relative;
+//       }
+//       li::after {
+//         position: absolute;
+//         content: "";
+//         width: 1px;
+//         height: 80%;
+//         right: 0;
+//         top: 20%;
+//         background: #333;
+//       }
+//       li:last-child:after {
+//         display: none;
+//       }
+//     }
+//     p {
+//       text-align: justify;
+//     }
+    
+//   }
+// }
+// .content-box {
+//   width: 90%;
+//   height: auto;
+//   display: inline-block;
+// }
+
+// .shop-image-slider {
+//   width: 90%;
+//   display: inline-block;
+
+//   .record {
+//     box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+//     background-color: #ffffff;
+//     padding: 0px;
+//     margin: 3px;
+//     position: relative;
+//     display: block;
+//   }
+//   .category-image {
+//     width: 100%;
+//   }
+//   .category-details {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 56px;
+//     -webkit-filter: blur(10px);
+//     -moz-filter: blur(10px);
+//     -o-filter: blur(10px);
+//     -ms-filter: blur(10px);
+//     filter: blur(10px);
+//     background-color: #000000;
+//     opacity: 0.5;
+//   }
+//   .category-title {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 56px;
+//     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+//     color: #ffffff;
+//     font-family: Marcellus;
+//     font-size: 27px;
+//     font-weight: 400;
+//   }
+// }
+// .shop-deatil-wrapper::after{
+//   content: '';
+//   position: absolute;
+//   width: 1px;
+//   height: 100%;
+//   top: 0;
+//   left: 50%;
+//   background:#333;
+// }
+
+
+// MIDHUN WORK END
+
+
+.page-banner {
+  display: block;
+  position: relative;
+  .banner-image {
+      width: 100%;
+      height: 333px;
+      object-fit: cover !important;
+  }
+  .banner-box-shadow {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+     // background-image: url('/assets/icons/Rectangle_137-page.png');
+     background-image: url('http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/icons/Rectangle_137-page.png');
+     
+     background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .banner-title {
+          text-align: center;
+          color: #ffffff;
+          font-family: Marcellus;
+          font-size: 30px;
+          font-weight: 400;
+          text-transform: uppercase;
+          justify-content: center;
+          max-width: 50%;
+      }
+  }
+}
+
+
+
+.categories-slider {
+ // width:88%;
+ width:90%;
+
+ height: 100%;
+
+  display: inline-block;
+  padding-left: 70px;
+  margin-right: 55px;
+  //bottom: 10px;
+  
+  .record {
+      //box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      padding:0px;
+      margin:3px;
+      position: relative;
+      display:block;
+  }
+  .category-image {
+      // width:100%;
+      // height: 100%;
+
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+.s-b-s{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+ // grid-template-rows: 4fr;
+}
+.btn-reg {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  width: 188px;
+  height: 42px;
+  font-size: 1vw;
+}
+.bt-cen{
+
+margin-bottom: 22px;
+}
+
+p, h3 , .btn {
+  font-family: Marcellus;
+}
+
+p{
+  margin-left: 35px;
+  margin-right: 30px;
+}
+h3{
+  margin-top: 14px;
+}
+
+
+.vl {
+  border-left: 1px solid #aaaa;
+  height: 33%;
+  position: absolute;
+  left: 50%;
+ margin-left: 5px;
+  margin-top: 12px;
+  top: 81;
+  bottom: 10;
+}
+
+.item2{
+    display: grid;
+    grid-template-rows: repeat(2);
+    margin: 22px 22px 22px 30px;
+}
+
+p.inli {
+    font-family: Akkuret-Light;
+    display: inline-block;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: bolder !important;
+     margin: 0px;
+    margin-left: 35px;
+}
+
+.in-li-mr {
+     
+  margin: 0;
+}
+
+.lnr {
+  font-weight: bold;
+}
+
+.icon-sh {
+    margin-left: 35px;
+}
+.fab{
+    margin: 4px;
+}
+
+.ev-img{
+   position: relative;
+   height: auto;
+   .rgr {
+      position: absolute;
+      left: 0;
+       
+  }
+    
+}
+
+
+.ev-img {
+   height: 188px;
+}
+.btm {
+   bottom: 0 !important;
+   
+}
+
+
+
+
+
+//  TESTBLOCK
+.img1, .img2 {
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  bottom: 25px;
+  left: 36%;
+ right: 36%;
+  
+ 
+}
+
+
+.ct-bt {
+  width: 188px;
+  height: 44px;
+ background: transparent;
+  color: #92403b;
+  border: 1px solid #92403b;
+
+}
+
+
+// MEDIA SCREEN IPAD
+@media only screen 
+and (max-width : 1024px) {
+  .banner-title{
+      font-size: 3vw !important;
+  }
+  .ev-hed{
+      font-size: 2.5vw;
+  }
+  .vl {
+      height: 20%;
+  }
+
+  .ct-bt {
+      width: 111px;
+      height: 28px;
+     background: transparent;
+      color: #92403b;
+      border: 1px solid #92403b;
+      font-size: 1vw;
+
+      text-transform: uppercase;
+  
+  }
+  .btn-reg {
+      background: transparent;
+      border: 1px solid black;
+      color: black;
+      width: 111px;
+      height: 28px;
+      font-size: 1vw;
+  }
+  .ev-img {
+      height: 144px;
+  }
+  p.inli{
+      font-size: 9px;
+  }
+
+}
+
+
+.icon{
+  margin: 2px;
+  height: 17px;
+  width: 17px;
+}
+
+
+
+
+// NEWOFFERS SLIDER 2
+.categories-slider2 {
+  width:88%;
+//height: 388px !important;
+height: 100%;
+  display: inline-block;
+  margin-left: 35px;
+  //bottom: 10px;
+  
+  .record2 {
+      //box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      padding:0px;
+      margin:3px;
+      position: relative;
+      display:block;
+  }
+  .category-image2 {
+      width:100%;
+      height: 100%;
+       
+  }
+}
+
+.mar-lft {
+  margin: 4%;
+}
+
+.grid-div2{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+}
+
+// Related Shops SLIDER 
+.categories-slider3 {
+  margin-top: 3px;
+  width:90%;
+
+height: 100%;
+  display: inline-block;
+  margin-left: 35px;
+  //bottom: 10px;
+  
+  .record3 {
+      //box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      padding:0px;
+      margin:3px;
+      position: relative;
+      display:block;
+  }
+  .category-image3 {
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+     // height: 111px !important;
+       
+  }
+}
+
+.h5 {
+  margin-left: 3%;
+}
+
+
+// NEWOFFERS SLIDER 4
+.categories-slider4 {
+  width:88%;
+//height: 388px !important;
+height: 100%;
+  display: inline-block;
+  margin-left: 35px;
+  //bottom: 10px;
+  
+  .record4 {
+      //box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      padding:0px;
+      margin:3px;
+      position: relative;
+      display:block;
+  }
+  .category-image4 {
+      width:100%;
+      height: 100%;
+       
+  }
+}
+
+h5 {
+  margin-left: 5%;
+  font-family: Marcellus;
+}
+
+.brd{
+  border-right: 1px solid #aaaa !important;
+  margin-top: 3px !important;
+}
+
+
+@media screen and (min-width: 1500px) {
+  .btn-reg{
+      font-size: 14px !important; 
+  }
+
+  .ev-img {
+      height: 222px !important;
+  }
+
+  .img1, .img2 {
+      width: 77% !important;
+      margin-left: 10% !important;
+  }
+
+}
+
+.btm {
+  margin-top: 15% ;
+}
+
+.lc {
+  font-family: Akkurat-Light;
+}
+
+
+.tit {
+  margin-left: 8%;
+}
+
+@media screen and (min-width: 1920px) {
+
+.shp-mar{
+  margin-top: 6%;
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+.ev-hed {
+  text-align: left !important;
+  margin-left: 4%;
+}
+
+}
+
+
+p.lc{
+  font-family: Akkurat !important;  
+}
+
+// END KRISHNA STYLES

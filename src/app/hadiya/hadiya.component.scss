@@ -1,0 +1,160 @@
+.content-wrapper{
+    width: 100%;
+    height: auto;
+    padding-top: 35px;;
+}
+
+.gif-img {
+  height: 300px !important;
+    object-fit: cover;
+}
+
+
+
+// NIKHIL
+
+/* CLASSES OVERRIDDEN */
+
+.card {
+	font-size: 1rem!important;
+	border-radius: 0rem !important;
+	border: 0px !important;
+}
+
+.card-img-top {
+	width: 100%;
+	border-top-left-radius: calc(0px);
+	border-top-right-radius: calc(0px);
+}
+
+.card-body {
+	padding: 0;
+}
+
+.card-title {
+	font-size: 1rem!important;
+	font-family: Akkurat;
+	margin-top: 0.15rem;
+	margin-bottom: 0.15rem;
+}
+
+.card-text {
+	font-size: 1rem!important;
+	font-family: Akkuratlight;
+}
+
+.lead {
+	font-family: Marcellus!important;
+	font-size: 1.6rem;
+}
+
+
+/* CUSTOM CLASSES */
+
+.cont {
+	padding: 12px;
+}
+
+.name-shade {
+	font-size: 1rem;
+	position: absolute;
+	height: 2rem;
+	left: 0;
+	bottom: 0;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	text-align: center;
+}
+
+.image-div {
+	position: inherit;
+}
+
+.vip-card-title {
+	font-family: Marcellus!important;
+	text-size: 3rem;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.vip-button {
+	font-family: Akkurat !important;
+	text-transform: uppercase;
+	width: 188px;
+	height: 44px;
+	border: 1px solid #000;
+	background: #fff;
+}
+.vip-button:hover {
+	background: #000;
+	color: #fff;
+}
+
+.vip-button-inv {
+	font-family: Akkurat !important;
+	text-transform: uppercase;
+	width: 188px;
+	height: 44px;
+	border: 1px solid #000;
+	color: #fff;
+	background: #000;
+}
+.subtitle{
+	font-family: Akkurat!important;
+	font-weight: 400;
+	font-size:1.3rem;
+}
+
+#history {
+	min-height: 30rem;
+	background-color: #f2f2f2;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.stores-column{
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+}
+.form-input-c {
+    border-color: black;
+    border-radius: 0;
+    margin-bottom: .25rem;
+}
+.custom-tab{
+    width: 50%;
+    text-align: center;
+}
+.post-line-v:after{
+	content: '';
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	background-color:#999;
+	top: 0;
+	left: 100%;
+}
+.service-box	{
+	height: 16rem;
+	width: 100%;
+	border: .08rem solid #000;
+	padding: 10%;
+	margin-bottom:.25rem;
+}
+
+.service-box img{
+	width:4.2rem;
+	height:auto;
+	margin-top:1.6rem;
+	margin-bottom:1.6rem;
+}
+.service-box p{
+	font-family:Akkurat;
+	font-weight:400;
+}
+
+ 
+#Div1{
+    display: none;
+}

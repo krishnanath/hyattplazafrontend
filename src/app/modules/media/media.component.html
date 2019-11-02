@@ -1,0 +1,101 @@
+<div class="page-banner">
+  <img src="{{ (pageBannerLoaded ? pageBanner.cover : '') }}" class="banner-image original-size">
+  
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+		{{ (pageBannerLoaded ? pageBanner.title: '') }}
+      </div>
+    </div>
+     
+  </div>
+  
+  <div id="myDIV" style="text-align:center;">
+    <button class="btn-cs active" (click)="tabToggle(1)" id="photo_gallery">
+      PHOTO GALLERY
+    </button>
+    <button class="btn-cs" (click)="tabToggle(2)" id="new_section">
+      NEWS
+    </button>
+  </div>
+ 
+  
+  <!-- MDB GALLERY -->
+  <div *ngIf="showTab == 1">
+  <div class="grid-col" id="img"  *ngIf="galleryDataLoaded">
+  <div *ngFor="let gallery of galleryData.data" class="item">
+	 <a class="custom-router-link" [routerLink] = "['media-images', gallery.id]">
+      <img
+        class="mens_fasion_img common-img-height"
+        src="{{gallery.gallery_image}}"
+        style="width:100%;"
+	  />   
+	  </a> 
+       <div class="text-block">          
+    		<p class="text" style="text-align:center;">{{gallery.title}}</p>
+      </div>
+    </div>   
+  </div>
+  </div>
+  <!-- ENDMDB GALLERY -->
+  <div *ngIf="showTab == 2">
+  <div class="news" id="news">
+ 
+      <!-- <div class="blog-des">
+          <div class="blog-des-img1 ">
+            <img  class="fx-h"  src="{{blogs[0].img}}"  style="width:100%;">
+            <p><b>{{blogs[0].time}}</b> </p>
+            <hr/>
+            <p class="des">{{blogs[0].des}} <a> [Read More]</a></p>
+        
+          </div>
+          <div class="blog-des-img2 ">
+              <img  class="fx-h"  src="{{blogs[1].img}}"  style="width:100%;" >
+              <p><b>{{blogs[1].time}}</b> </p>
+              <hr/>
+              <p class="des">{{blogs[1].des}}  <a>[Read More]</a></p>
+          </div>
+          <div class="blog-des-img3 ">
+              <img   class="fx-h" src="{{blogs[2].img}}"  style="width:100%;" >
+              <p><b>{{blogs[2].time}}</b> </p>
+              <hr/>
+              <p class="des">{{blogs[2].des}}  <a>[Read More]</a></p>
+          </div>
+          <div class="blog-des-img4 ">
+              <img class="fx-h" src="{{blogs[3].img}}" style="width:100%;" >
+              <p><b>{{blogs[3].time}}</b> </p>
+              <hr/>
+              <p class="des">{{blogs[3].des}}  <a>[Read More]</a></p>
+          </div>
+          <div class="blog-des-img5 ">
+              <img  class="fx-h"  src="{{blogs[4].img}}" style="width:100%;">
+              <p><b>{{blogs[4].time}}</b> </p>
+              <hr/>
+              <p class="des">{{blogs[4].des}}  <a>[Read More]</a></p>
+          </div>
+          <div class="blog-des-img6 ">
+              <img  class="fx-h"  src="{{blogs[5].img}}" style="width:100%;"  >
+              <p><b>{{blogs[5].time}}</b> </p>
+              <hr/>
+              <p class="des">{{blogs[5].des}}  <a>[Read More]</a></p>
+        
+          </div>
+        
+        </div>
+         -->
+  <div class="blog-des" *ngIf="newsDataLoaded">
+    <div class="blog-des-img1" *ngFor="let news of newsData">
+      <a [routerLink]="['news-detail',news.id]">
+        <img class=" common-img-height" src="{{news.news_image}}" style="width:100%" />
+      </a>
+      <p><b>{{news.create_date}}</b> </p>
+      <hr class="hr-wid"/>
+      <p class="des text"> {{news.short_desc }}</p>
+  
+    </div>
+  </div>
+  
+  
+  </div>
+</div>
+<br>
+<br>

@@ -1,0 +1,149 @@
+<div class="page-banner">
+  <img [src]="banner" class="banner-image" />
+  <div class="banner-box-shadow">
+    <div class="banner-title">
+      {{ pageTitle }}
+    </div>
+  </div>
+</div>
+<div class="content-wrapper">
+  <div class="container mb-5 padRL30">
+    <div class="row">
+      <div class="col-md-5">
+        <img
+          src="/assets/gifcard.png"
+          class="img-fluid"
+          alt="Responsive image"
+        />
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <p>
+          Pellentesque eleifend commodo nibh eu tempus. Praesent molestie, augue
+          vitae pulvinar efficitur, augue ipsum maximus turpis, in fringilla
+          elit justo non leo. Nam tempor, justo ac semper rhoncus, leo metus
+          bibendum sem, eget porttitor velit enim tempus neque. Praesent sed
+          condimentum augue. Etiam nec lectus egestas, eleifend risus at, tempus
+          ipsum. Quisque sit amet mollis odio, eget condimentum odio. Ut quis
+          lorem nibh.
+        </p>
+        <button class="vip-button" (click)="switchVisible()">
+          BUY ONLINE
+        </button>
+        <div class="ali">(Cash on Delivery)</div>
+      </div>
+
+    
+
+    </div>
+  </div>
+
+     <!-- BUY ONLINE -->
+
+    <div class="container padRL30" id="Div1" >
+      <div class="row">
+        <div class="col-md-12 vip-card-title mb-3">
+          <p class="lead">ORDER ONLINE & PAY CASH ON DELIVERY</p>
+        </div>
+        <div class="col-md-12">
+          <form id="order-form">
+            <div class="row">
+              <div class="offset-md-2 col-md-3">
+                Quantity
+              </div>
+              <div class=" col-md-3">
+                <div class="input-group mb-3"><span>200 QAR &nbsp; X &nbsp;</span><input class="form-control form-input-c col-md-4" type="number" name="cpn200" id="cpn200"/></div>
+                <div class="input-group mb-3"><span>100 QAR &nbsp; X &nbsp;</span><input class="form-control form-input-c col-md-4" type="number" name="cpn100" id="cpn100"/></div>
+                <div class="input-group mb-3"><span>&nbsp;&nbsp;50 QAR &nbsp; X &nbsp;</span><input class="form-control form-input-c col-md-4" type="number" name="cpn50" id="cpn50"/></div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="offset-md-2 col-md-3">
+                Delivery
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="delivery" id="delivery-opt-1"/>
+                  <label class="form-check-label" for="delivery-opt-1">Pickup from customer service</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="delivery" id="delivery-opt-2"/>
+                  <label class="form-check-label" for="delivery-opt-2">Delver to my address</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="offset-md-2 col-md-3">
+                Total Amount
+              </div>
+              <div class=" col-md-3">
+                <input class="form-control form-input-c" type="text" name="total" id="total"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="offset-md-2 col-md-3">
+                Name
+              </div>
+              <div class=" col-md-6">
+                <input class="form-control form-input-c" type="text" name="total" id="total"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="offset-md-2 col-md-3">
+                Email
+              </div>
+              <div class=" col-md-6">
+                <input class="form-control form-input-c" type="text" name="total" id="total"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="offset-md-2 col-md-3">
+                Phone Number
+              </div>
+              <div class=" col-md-6">
+                <input class="form-control form-input-c" type="text" name="total" id="total"/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="offset-md-2 col-md-3">
+                Address
+              </div>
+              <div class=" col-md-6">
+                <textarea class="form-control form-input-c" rows=5 ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center mt-3 mb-3">
+                <button class="vip-button-inv" >CONFIRM ORDER</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+ 
+    </div>
+
+    <!-- END BUY ONLINE -->
+
+
+  <hr />
+  <div class="container padRL30">
+    <p class="lead subtitle m-0">List of participating stores</p>
+    <div class="row stores-column">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 p-1" *ngFor="let store of stores">
+        <div class="card">
+          <div class="image-div">
+            <img 
+              [src]="store.store_image"
+              class="card-img-top gif-img"
+              alt="..."
+            />
+            <span class="name-shade">{{store.store_title}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

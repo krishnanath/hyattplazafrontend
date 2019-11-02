@@ -1,0 +1,273 @@
+.gmap_canvas{
+    // width: 500px !important;
+    max-height: 480px !important;
+    float: center  !important;
+    height: auto;
+}
+iframe{
+    width: 100%;
+    float: center  !important;
+}
+
+
+// .page-banner {
+//     display: block;
+//     position: relative;
+//     .banner-image {
+//         width: 100%;
+//         height: 400px;
+//     }
+//     .banner-box-shadow {
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//        // background-image: url('/assets/icons/Rectangle_137-page.png');
+//        background-image: url('http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/icons/Rectangle_137.png');
+        
+//        background-size: cover;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         .banner-title {
+//             text-align: center;
+//             color: #ffffff;
+//             font-family: Marcellus;
+//             font-size: 38px;
+//             font-weight: 400;
+//             text-transform: uppercase;
+//             justify-content: center;
+//             max-width: 50%;
+//         }
+//     }
+// }
+
+
+
+h1{
+    font-family: Marcellus-Regular;
+    margin-top: 100px;
+    
+}
+h3{
+    font-family: Marcellus-Regular;
+
+}
+.enq{
+    text-transform: uppercase;
+
+}
+.con{
+    text-transform: uppercase;
+}
+
+.cont-us{
+    display: grid;
+    grid-template-columns: repeat(2 , 4fr);
+    grid-template-rows: 5fr;
+}
+
+.form-sep{
+    margin-left:15% ;
+    margin-top: 10%;
+}
+
+// FormStyle
+#form {
+    max-width: 700px;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .form-field {
+    display: flex;
+    margin: 0 0 1rem 0;
+  }
+  .message{
+      display: flex;
+      margin: 0 0 1rem 0;
+      height: 150px;
+  }
+  label {
+    width: 50%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    border: 1px solid #000000 !important;
+  }
+
+  label {
+      display: inline;
+    text-align: left;
+    margin-left: -39px;
+ 
+    // width: 30%;
+  }
+  input {
+    border: 2px solid #aaa;
+    border-radius: 2px;
+  }
+  
+
+// EndFormStyle
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(3 , 4fr);
+    grid-template-rows: 250px;
+}
+
+.enquiry{
+    margin-left: 15%;
+}
+h4{
+    
+    font-weight:bold;
+}
+
+p{
+    margin-bottom: 1px;
+}
+
+.submit-bt{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background: #ffffff;
+   // background: #000000;
+    //color: #ffffff;
+    
+     
+}
+
+.submit{
+    //background: #ffffff !important;
+    background: #000000;
+    color: #ffffff;
+    
+
+}
+.map{
+    margin-top: 10%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+
+@media only screen 
+and (max-width : 768px) {
+
+    .banner-image {
+        
+        height: 230px !important;
+    }
+
+    .gmap_canvas{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    input {
+        height: 77%;
+    }
+    
+
+    .banner-image{
+        width:100%;
+        max-height:344px !important ;
+    }
+}
+
+
+// ALERT STYLE
+.thnk{
+    font-family: Marcelles;
+    color: #deb075 !important;
+}
+
+.modal{
+    padding-top: 15% !important;
+     
+  // background: url('https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif');
+opacity: .7;
+}
+  
+.ok {
+	border: 1px solid #deb075;
+	color: #deb075;
+	width: 88px;
+	height: 33px;
+	background: #ffffff;
+}
+// END ALERT STYLE
+
+.slect{
+    border: 1px solid black;
+    width: 100%;
+background: #ffffff !important;
+}
+
+
+
+@media only screen 
+and (min-width : 1920px) {
+.map {
+    margin-top: 17% !important;
+}
+
+.cont-us
+{
+    margin-left: 10%;
+}
+.details{
+    margin-left: 12%;
+}
+.form-sep {
+    
+    margin-top: 22px;
+}
+.map {
+    margin-top: 95px !important;
+}
+ 
+}
+
+@media only screen 
+and (max-width : 777px) {
+    .cont-us{
+        display: grid !important;
+        grid-template-columns: repeat(1 , auto) !important;
+        // grid-template-rows: 5fr;
+    }
+    .gmap_canvas{
+        width: 100% !important;
+        max-height: 480px !important;
+         
+        height: auto;
+    }
+    .map{
+        // max-width: 255px !important;
+    }
+    iframe {
+    
+    }
+    .item1, .item3{
+        display: none;
+    }
+    .form-sep{
+        margin-left:11px  ;
+        margin-top: 10%;
+    }
+
+}

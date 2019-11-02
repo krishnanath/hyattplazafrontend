@@ -1,0 +1,176 @@
+// .page-banner {
+//     display: block;
+//     position: relative;
+//     .banner-image {
+//         width: 100%;
+//         height: 400px;
+//     }
+//     .banner-box-shadow {
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//        // background-image: url('/assets/icons/Rectangle_137-page.png');
+//        background-image: url('http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/icons/Rectangle_137.png');
+        
+//        background-size: cover;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         .banner-title {
+//             text-align: center;
+//             color: #ffffff;
+//             font-family: Marcellus;
+//             font-size: 38px;
+//             font-weight: 400;
+//             text-transform: uppercase;
+//             justify-content: center;
+//             max-width: 50%;
+//         }
+//     }
+// }
+
+
+
+.align-style {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.round{
+    width: 20px;
+    height: 20px;
+    margin-left:15%;
+    margin-bottom: 2.5%;
+    border-radius: 50%;
+    background: #deb075;
+    float: left;
+    margin-right: 100px;
+}
+ 
+
+.round::before {
+    content: "";
+    height: 1px;
+    background-color: #deb075;
+    //color: #333;
+    width: 90%;
+    //border: 0.03rem solid #000;
+    position: absolute;
+    left: 2%;
+    top: 9px;
+}
+.slick-current .slick-active:focus{
+    border: 0!important;
+}
+
+.round:focus, .round:active, .round::selection  {
+    background-color: black !important;
+}
+// .round::after {
+//     content: "";
+//     height: 1px;
+//     background-color: #333;
+//     //color: #333;
+//     width: 21%;
+//     //border: 0.03rem solid #000;
+//     position: absolute;
+//     left: 22%;
+//     top: 9px;
+// }
+
+
+
+// FORM STYLE
+
+
+#Div2 {
+    display: none;
+  }
+
+  .mark{
+      background: white;
+      
+  }
+  h5 {
+      display: flex;
+      font-family: Marcellus !important;
+   justify-content: center;
+   text-transform: uppercase;
+   margin-top: 22px;
+   margin-bottom: 14px;
+  }
+
+  .enq-form{
+      display: grid;
+      grid-template-columns: repeat(2, 4fr);
+      margin-bottom: 22px;
+  }
+.enq-form1{
+ 
+    margin-left: 44%;
+}
+.enq-form2{
+ 
+    margin-left: 2%;
+}
+
+
+//   FormStyle
+#form {
+    max-width: 700px;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .form-field {
+    display: flex;
+    margin: 0 0 1rem 0;
+  }
+  .message{
+      display: flex;
+      margin: 0 0 1rem 0;
+      height: 110px;
+      width: 77%;
+  }
+  
+
+  input {
+    width: 88%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    height: 42px;
+  }
+
+ 
+  input {
+    border: 1px solid #aaa;
+    border-radius: 2px;
+  }
+  
+  textarea{
+      width: 66% !important;
+      border: 1px solid #aaa;
+  }
+
+// EndFormStyle
+::placeholder{
+    font-family: Akkurat !important;
+}
+
+.button-common-style:hover{
+    color: #000!important;
+    background: #fff !important;
+    
+    border: 1px solid #000 !important;
+
+}
+.button-common-style{
+    background: #000 !important;
+   
+    border:1px solid #000 !important;
+    color: #fff !important;
+}

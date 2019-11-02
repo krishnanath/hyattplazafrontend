@@ -1,0 +1,45 @@
+<div class="page-banner">
+    <!-- <img *ngIf="pageBanner" src="{{ (pageBannerLoaded ? pageBanner.cover : '') }}" class="banner-image" /> -->
+   <img class="page-banner" src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/hyattplaza-images/Entertainment/ban.png">
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+       Entertainmet Details
+      </div>
+    </div>
+  </div>
+  <!-- <div class="shop-deatil-wrapper" *ngIf="shopDetail[0]"> -->
+      <div class="shop-deatil-wrapper">
+ 
+    <div class="container padLR15">
+      <div class="row">
+        <div class="col-6">
+          <div class="content-box">
+            <h4>Entertainmet Details Page</h4>
+            <ul class="attractives">
+              
+              <li><i class="fa fa-phone" aria-hidden="true"></i> 777 111 888</li>
+              <li>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM - 05:00 PM
+              </li>
+            </ul>
+            <p>
+                   Arcs-en-ciel - lunules soleils du ou je tohu-bohus. Les exquise aux en j'ai je fini montant, les l'éther mais je.
+            </p>
+            <div class="shop-image-slider">
+              <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let category of categories" class="slide record">
+                  <img style="width:100%;" [src]="category.image" class="category-image">
+                </div>
+              </ngx-slick>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img style="width:100%; padding-bottom: 22px" src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/events/797.png"/>
+          <br>
+          <img style="width:100%;" src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/events/MAP.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>

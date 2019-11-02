@@ -1,0 +1,61 @@
+<div class="page-banner">
+    <!-- <img src="/assets/images/cat-01.png" class="banner-image"> -->
+  <img src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/hyattplaza-images/Guestservices/Group 127.png" class="banner-image original-size" >  
+  
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+      GUEST SERVICES
+      </div>
+    </div>
+     
+  </div>
+<div class="guestser">
+<div class="container text-center">
+    <p class=" text">At Hyattplaza we offer a range of exclusive services to make your shopping experience a pleasurable one.</p>
+</div>
+<div class="container">
+  
+  <div class="row ">
+    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3 p-2" *ngFor="let service of services">
+      <div class="service-box text-center">
+        <img [src]="service.serviceIcon">
+        <p>{{service.serviceName}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <hr/>
+</div>
+
+<div class="container">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <p class="lead small text-center">Employee Excellence Awards</p>
+  </div>
+  <div class="row">
+    <div class="col-md-10 p-2">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/hyattplaza-images/Guestservices/lar.png" style="width: 100%" class="card-img" alt="...">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <!-- <p class="lead small text-center">{{awards[0].title}}</p> -->
+              <h5 class="card-title title">{{awards[0].wonMonth}}  |  {{awards[0].employ}}</h5>
+              <p class="card-text text">{{awards[0].description}}</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 mb-2"><img style="width: 100%" src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/hyattplaza-images/Guestservices/lar.png" class="img-fluid" alt="Responsive image"></div>
+        <div class="col-xs-12 col-md-12 mb-2"><img style="width: 100%" src="http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/hyattplaza-images/Guestservices/lar.png" class="img-fluid" alt="Responsive image"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

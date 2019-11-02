@@ -1,0 +1,140 @@
+.page-banner {
+    display: block;
+    position: relative;
+    .banner-image {
+      width: 100%;
+    }
+    .banner-box-shadow {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/icons/Rectangle_137-page.png");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .banner-title {
+        text-align: center;
+        color: #ffffff;
+        font-family: Marcellus;
+        font-size: 60px;
+        font-weight: 400;
+        text-transform: uppercase;
+        justify-content: center;
+        max-width: 50%;
+      }
+    }
+  }
+  .shop-deatil-wrapper {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+  
+    .content-box {
+      h4 {
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+      .attractives {
+        display: inline-block;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        li {
+          float: left;
+          margin: 0;
+          padding: 0 15px;
+          position: relative;
+        }
+        li::after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 80%;
+          right: 0;
+          top: 20%;
+          background: #333;
+        }
+        li:last-child:after {
+          display: none;
+        }
+      }
+      p {
+        text-align: justify;
+      }
+      
+    }
+  }
+  .content-box {
+    width: 90%;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .shop-image-slider {
+    width: 90%;
+    display: inline-block;
+  
+    .record {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      padding: 0px;
+      margin: 3px;
+      position: relative;
+      display: block;
+    }
+    .category-image {
+      width: 100%;
+      height: 188px !important;
+      object-fit: cover;
+    }
+    .category-details {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      -webkit-filter: blur(10px);
+      -moz-filter: blur(10px);
+      -o-filter: blur(10px);
+      -ms-filter: blur(10px);
+      filter: blur(10px);
+      background-color: #000000;
+      opacity: 0.5;
+    }
+    .category-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      color: #ffffff;
+      font-family: Marcellus;
+      font-size: 27px;
+      font-weight: 400;
+    }
+  }
+  .shop-deatil-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background:#333;
+  }  

@@ -1,0 +1,215 @@
+<div class="shop-footer mob-hide">
+  <div class="container">
+    <div class="row mb-footer-grid">
+      <div class="col-9">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-5">
+                  <div class="social">
+                    <div class="social-title">FOLLOW US</div>
+                    <div class="social-icons" *ngIf="socialIcons">
+                      <div class="social-icon" *ngFor="let icon of socialIcons.data;" >
+                          <a href="{{ icon.link }}" target="_blank"> <img src="{{ icon.icon }}"> </a>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="subscription">
+                    <div class="subscription-title">
+                      RECEIVE OUR NEWSLETTER
+                    </div>
+                    <div class="subscription-box">
+                      <input type="text" name="email" class="subscription">
+                      <input type="button" name="subscribe" class="subscribe-button" value="Subscribe">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-separator"></div>
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col" *ngIf="footerColOne">
+                  <div class="footer-link-{{ (i === 0) ? 'main': 'sub' }}" *ngFor="let link of footerColOne; let i = index;">
+                    <a href="{{ link.itemLink }}" *ngIf="i === 0">{{ link.itemName }}</a>
+                    <a href="{{ link.itemLink }}" *ngIf="i !== 0"> {{ link.itemName }}</a>
+                  </div>  
+                </div>
+                <div class="col" *ngIf="footerColTwo">
+                    <div class="footer-link-{{ ( j < 3 ) ? 'main': 'sub' }}" *ngFor="let link of footerColTwo; let j = index;">
+                        <a href="{{ link.itemLink }}" *ngIf="j < 3">{{ link.itemName }}</a>
+                        <a href="{{ link.itemLink }}" *ngIf="j > 2">{{ link.itemName }}</a>
+                    </div>
+                </div>
+                <div class="col" *ngIf="footerContact">                  
+                  <div class="footer-link-main"><a href="/contact">{{ (footerContact[0]) ? footerContact[0].title : ''}}</a></div>
+                    <div class="footer-link-text">{{ (footerContact[0]) ? footerContact[0].description2: ''}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="footer-apps">
+          <div class="apps-box">
+            <div class="coming-soon-title">
+              COMING SOON
+            </div>
+            <div class="app-icon">
+              <img src="/assets/icons/app-ios.png">
+            </div>
+            <div class="app-icon">
+              <img src="/assets/icons/app-android.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="footer-copyright mob-hide">
+  © 2019 Wildherbstechnologies. All rights reserved.
+</div>
+
+ 
+
+<!-- MOBILE FOOTER -->
+ 
+<div class="shop-footer-mob desk-hide">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-content">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="social">
+                    <div class="social-title">FOLLOW US</div>
+                    <div class="social-icons" *ngIf="socialIcons">
+                        <div class="social-icon" *ngFor="let icon of socialIcons.data;" >
+                            <a href="{{ icon.link }}" target="_blank"> <img src="{{ icon.icon }}"> </a>
+                        </div>  
+                      </div>
+                    <!-- <div class="social-icons">
+                      <div class="social-icon">
+                        <img src="assets/icons/facebook.png">
+                      </div>
+                      <div class="social-icon">
+                        <img src="assets/icons/twitter.png">
+                      </div>
+                      <div class="social-icon">
+                        <img src="assets/icons/insta.png">
+                      </div>
+                      <div class="social-icon">
+                        <img src="assets/icons/youtube.png">
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="subscription">
+                    <div class="subscription-title">
+                      RECEIVE OUR NEWSLETTER
+                    </div>
+                    <form>
+                    <div class="subscription-box">
+                      <input type="text" name="email" class="subscription" required>
+                    </div>
+                    <div class="subscription-box">
+                      <input type="submit" name="subscribe" class="subscribe-button" value="Subscribe">
+                    </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="footer-menu-links">
+                    <div class="col-8">
+                      <div class="footer-menu-item" ><a href="/shopping">
+                        Shopping</a>
+                      </div>
+                      <div class="footer-menu-item"><a href="/dining">Dining</a>
+                        
+                      </div>
+                      <div class="footer-menu-item" >
+                        <a href="/guest-services">Guest Services</a>
+                      </div>
+                      <div class="footer-menu-item" >
+                        <a href="/entertainment">Entertainment</a>
+                      </div>
+                      <div class="footer-menu-item" >
+                        <a href="/events">Events</a>
+                      </div>
+                      
+                      <div class="footer-menu-item">
+                          <a href="/terms">Terms & Conditions</a>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer-menu-item" >
+                            <a href="/offers">Offers</a>
+                        </div>
+                      <div class="footer-menu-item" >
+                        <a href="/career">Career</a>
+                      </div>
+                      <div class="footer-menu-item" >
+                        <a href="/media">media</a>
+                      </div>
+                      <div class="footer-menu-item"  >
+                        <a href="/about">About US</a>
+                      </div>
+                      <div class="footer-menu-item" >
+                          <a href="/contact">Contact US</a>
+                      </div>
+                      <div class="footer-menu-item" >
+                          <a href="privacy">Privacy Policy</a>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="footer-apps">
+                    <div class="apps-box">
+                      <div class="coming-soon-title">
+                        COMING SOON
+                      </div>
+                      <div class="app-icon">
+                        <img src="assets/icons/app-ios.png">
+                      </div>
+                      <div class="app-icon">
+                        <img src="assets/icons/app-android.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-border">
+                <div class="col-12">
+                  <div class="footer-copyright">
+                    © 2019 Hyattplaza. All rights reserved.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>

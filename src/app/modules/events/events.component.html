@@ -1,0 +1,89 @@
+ 
+<div class="page-banner">
+  <img src="{{ (pageBannerLoaded ? pageBanner.cover : '') }}" class="banner-image">
+  <div class="banner-box-shadow">
+    <div class="banner-title">
+      {{ (pageBannerLoaded ? pageBanner.title: '') }}
+    </div>
+  </div>
+</div>
+<h4 class="ev">CURRENT/UPCOMING EVENTS</h4>
+
+<div class="stories-images container" *ngIf="featuredItems" >
+
+        <div class="row home-mb-section">
+            <div class="col-5 home-mb-section-sub" *ngIf="featuredItems[0]">
+              <img src="{{featuredItems[0].event_image}}">
+              <div class="stories-image-content" style="background-image: url('assets/icons/Rectangle_242.png');background-size: cover;">
+                <div class="image-caption">
+                  <div class="ev-image-caption-large">
+                    <p class="ev-tag">{{featuredItems[0].name}}</p>
+                    <p class="ev-title" innerHTML="{{featuredItems[0].title}}"></p>
+                    <a routerLink="events_details"> 
+          <button class="link-button button-common-style" type="button"  mdbWavesEffect> EXPLORE more</button>
+
+                    </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7 home-mb-section-sub" *ngIf="featuredItems[1]">
+              <img src="{{featuredItems[1].event_image}}" style="height:100%;">
+              <div class="stories-image-content" style="background-image: url('assets/icons/Rectangle_113.png');background-size: cover;">
+                <div class="image-caption">
+                  <div class="ev-image-caption-small">
+                    <p class="ev-tag">{{featuredItems[1].name}}</p>
+                    <p class="ev-title" innerHTML="{{featuredItems[1].title}}"></p>
+                  <a routerLink="events_details"> 
+          <button class="link-button button-common-style" type="button"  mdbWavesEffect> EXPLORE more</button>
+
+                  </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row home-mb-section">
+            <div class="col-7 home-mb-section-sub" *ngIf="featuredItems[2]">
+              <img src="{{featuredItems[2].event_image}}">
+              <div class="stories-image-content" style="background-image: url('assets/icons/Rectangle_140.png');background-size: cover;">
+                <div class="image-caption">
+                  <div class="ev-image-caption-small">
+                    <p class="ev-tag">{{featuredItems[2].name}}</p>
+                    <p class="ev-title" innerHTML="{{featuredItems[2].title}}"></p>
+                    <a routerLink="events_details"> 
+          <button class="link-button button-common-style" type="button"  mdbWavesEffect> EXPLORE more</button>
+
+                    </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 home-mb-section-sub" *ngIf="featuredItems[3]">
+              <img src="{{featuredItems[3].event_image}}">
+              <div class="stories-image-content" style="background-image: url('assets/icons/Rectangle_243.png');background-size: cover;">
+                <div class="image-caption">
+                  <div class="ev-image-caption-large">
+                    <p class="ev-tag">{{featuredItems[3].name}}HELEOSDA</p>
+                    <p class="ev-title" innerHTML="{{featuredItems[3].title}}"></p>
+                    <a routerLink="stay-updated"> 
+          <button class="link-button button-common-style" type="button"  mdbWavesEffect> EXPLORE more</button>
+
+                    </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </div>
+  <br>
+
+
+<div style="text-align:center;">
+  <a routerLink="explore_more">
+      <button class="link-button button-common-style cus-btn" type="button"  mdbWavesEffect> EXPLORE more</button>
+  </a>   
+
+</div>
+<br>

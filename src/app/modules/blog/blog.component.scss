@@ -1,0 +1,217 @@
+
+.page-banner {
+    display: block;
+    position: relative;
+    .banner-image {
+    //     width: 100%;
+    //    // height: 333px;
+    //    height: auto;
+    //    max-height: 333px;
+    display: block;
+    max-width:1920px ;
+    max-height: 565px;
+    width:auto;
+    height: auto;
+    }
+    .banner-box-shadow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+       // background-image: url('/assets/icons/Rectangle_137-page.png');
+       background-image: url('http://wildherbstechnologies.com/demos/hyattplaza-beta-version/assets/icons/Rectangle_137-page.png');
+       
+       background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .banner-title {
+            text-align: center;
+            color: #ffffff;
+            font-family: Marcellus;
+            font-size: 30px;
+            font-weight: 400;
+            text-transform: uppercase;
+            justify-content: center;
+            max-width: 50%;
+        }
+    }
+}
+
+
+.ft-bl {
+    margin: 18px;
+}
+
+h4{
+    font-family: Marcellus;
+}
+
+
+.feature-blog-img {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    margin-left: 32px;
+    margin-right: 32px;
+    grid-gap:18px;
+
+    margin-bottom: 22px;
+}
+
+
+
+.hero-header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+   
+  .hero-centered {
+    position: absolute;
+    font-size: 2vw;
+    top: 50%;
+    height: 77%;
+    left: 50%;
+    width:80%;
+    font-family: Marcellus;
+   
+    transform: translate(-50%, -50%);
+    background-color:black;
+      opacity:0.65; /* transparency */
+      filter:alpha(opacity=60); /* IE transparency */
+  }
+
+  .blog-des{
+      display: grid;
+      grid-template-columns: repeat(3, 3fr);
+      grid-auto-rows: repeat(2, 2fr);
+      margin-left: 32px;
+    margin-right: 32px;
+    grid-gap:18px;
+
+    margin-bottom: 22px;
+  }
+
+.fx-h{
+    height: 228px !important;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin: 1px;
+}
+
+p{
+    font-family: Akkuret-Light;
+}
+
+.bl-des {
+    display: flex;
+    margin-top: 13%;
+    font-size: 31px;
+ 
+}
+
+@media only screen 
+
+and (max-width : 768px) { 
+
+    .banner-image  {
+        height: 255px !important;
+        object-fit: cover;
+    }
+
+    .fx-h{
+        height: 128px !important;
+    }
+    
+    .bl-des {
+         
+        font-size: 13px !important;
+     
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .bl-des {
+        display: flex;
+        /* margin: 13%; */
+        font-size: 38px;
+        margin: 15%;
+        font-family: Marcellus;
+    }
+   
+    .blog-des{
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-auto-rows: repeat(2, 2fr);
+        margin-left: 32px;
+      margin-right: 32px;
+      grid-gap:18px;
+    
+      margin-bottom: 22px;
+    }
+    
+    .fx-h{
+      height: 288px !important;
+      max-width: 550px !important;
+      object-fit: cover;
+    }    
+
+.des , hr{
+    max-width: 550px !important;
+}
+.margin-align{
+    margin-left: 3%;
+}
+
+  }
+
+
+
+     // TEXTBLOCK
+.item {
+    position: relative;
+  }
+.text-block {
+    position: absolute;
+    bottom: 0;
+    //right: 20px;
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4);
+   
+    opacity: 4.8;
+    color: white;
+    width: 100%;
+    height: 22%;
+    //padding-left: 20px;
+   // padding-right: 20px;
+   padding-top: 3%;
+   max-width: 550px !important;
+  }
+
+//   END TEXTBLOCK
+
+.hed-tp{
+    margin-top: 22px !important;
+    margin-bottom: 22px !important;
+}
+
+ 
+@media only screen 
+
+and (min-width : 768px) { 
+    .p{
+        font-size: 20px !important;
+    }
+}

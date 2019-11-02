@@ -1,0 +1,58 @@
+<div class="page-banner">
+    <!-- <img src="/assets/images/cat-01.png" class="banner-image"> -->
+  <img src="assets/hyattplaza-images/blog/banner.png" class="banner-image original-size" style="width:100%;" >  
+  
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+      BLOG
+      </div>
+    </div>
+     
+  </div>
+
+
+ <div class="ft-bl" style="text-align:center">
+<h4 class="hed-tp">FEATURED BLOG</h4>
+</div> 
+
+<div class="feature-blog-img">
+  <div class="fet-img1">
+      <div class="hero-header"> 
+       <a href="/blog-detail"> <img src="{{blog[0].img}}" style="width:100%;"></a>
+     
+     
+    <div class="hero-centered"> 
+    <p class="bl-des">{{blog[0].des}}</p></div>
+  </div>
+  </div>
+  <div class="fet-img2">
+      <div class="hero-header">
+          <a href="/blog-detail">    <img src="{{blog[1].img}}" style="width:100%;"> </a> 
+    <div class="hero-centered"><p class="bl-des">{{blog[1].des}}</p></div>
+
+</div>
+  </div>
+
+
+</div>
+
+
+<div class="margin-align"> 
+<div class="blog-des">
+    <div class="blog-des-img1 " *ngFor="let blog of blogs ">
+      <div class="item">
+      <img  class="fx-h"  src="{{blog.img}}" style="width:100%;" routerLink="/blog/blog_details">
+      <div class="text-block">
+          <p  class="p" style="text-align:center;">Lorem Ipsum</p>    
+            </div>
+    </div>
+      <p><b>{{blog.time}}</b> </p>
+      <hr/>
+      <p class="des"> {{blog.des}}</p>
+  
+    </div>
+</div>
+
+
+</div>
+ 

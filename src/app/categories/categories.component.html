@@ -1,0 +1,143 @@
+<div class="page-banner">
+  <img src="/assets/images/cat-01.png" class="banner-image">
+  <div class="banner-box-shadow">
+    <div class="banner-title">
+      LOREM IPSUM
+    </div>
+  </div>
+  <div class="banner-search">
+    <div class="search-boxes">
+      <select class="search-select" name="category">
+        <option value="0">Select Category</option>
+      </select>
+      <input type="text" class="search-text" name="search">
+      <div class='search-button'>
+        <img src="/assets/icons/search.png">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="category-selector">
+  <img src="/assets/images/cat-02.png" class="category-image">
+  <div class="category-image-shadow">
+    <div href="#" class="category-button-white"><a href="#">CATEGORIES</a></div>
+    <div class="category-button-separator">
+      <img src="/assets/icons/Path_118.png">
+    </div>
+    <div href="#" class="category-button-black"><a href="#">BRANDS</a></div>
+  </div>
+</div>
+<div class="categories container">
+  <div class="categories-title">
+    CATEGORIES
+  </div>
+  <!-- <div class="records row">
+    <div class="record col-3" *ngFor="let category of categories">
+      <img [src]="category.image" class="category-image">
+
+      <div class="category-details">
+        <div class="category-title">
+          {{category.title}}}
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="categories-slider">
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let category of categories" class="slide record">
+        <img [src]="category.image" class="category-image">
+
+        <div class="category-details">
+         
+        </div>
+        <div class="category-title">
+            {{category.title}}
+          </div>
+      </div>
+    </ngx-slick>
+  </div>
+
+</div>
+<div class="stories-images container">
+  <div class="stories-title">
+    FEATURED STORES
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <img src="{{stories[0].image}}">
+      <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_245.png');background-size: cover;">
+        <div class="image-caption">
+          <div class="image-caption-elarge">
+            <p class="tag">{{stories[0].tag}}</p>
+            <p class="title" innerHTML="{{stories[0].title}}"></p>
+            <div class="link-button">EXPLORE MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <img src="{{stories[1].image}}">
+      <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_244.png');background-size: cover;">
+        <div class="image-caption">
+          <div class="image-caption-elarge">
+            <p class="tag">{{stories[1].tag}}</p>
+            <p class="title" innerHTML="{{stories[0].title}}"></p>
+            <div class="link-button">EXPLORE MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-7">
+      <img src="{{stories[2].image}}">
+      <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_242.png');background-size: cover;">
+        <div class="image-caption">
+          <div class="image-caption-large">
+            <p class="tag">{{stories[2].tag}}</p>
+            <p class="title" innerHTML="{{stories[0].title}}"></p>
+            <div class="link-button">EXPLORE MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <img src="{{stories[3].image}}">
+      <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_113.png');background-size: cover;">
+        <div class="image-caption">
+          <div class="image-caption-small">
+            <p class="tag">{{stories[3].tag}}</p>
+            <p class="title" innerHTML="{{stories[0].title}}"></p>
+            <div class="link-button">EXPLORE MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <img src="{{stories[4].image}}">
+      <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_140.png');background-size: cover;">
+        <div class="image-caption">
+          <div class="image-caption-small">
+            <p class="tag">{{stories[4].tag}}</p>
+            <p class="title" innerHTML="{{stories[0].title}}"></p>
+            <div class="link-button">EXPLORE MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <img src="{{stories[5].image}}">
+      <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_243.png');background-size: cover;">
+        <div class="image-caption">
+          <div class="image-caption-large">
+            <p class="tag">{{stories[5].tag}}</p>
+            <p class="title" innerHTML="{{stories[0].title}}"></p>
+            <div class="link-button">EXPLORE MORE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

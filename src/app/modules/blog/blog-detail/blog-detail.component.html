@@ -1,0 +1,100 @@
+<div class="page-banner">
+    <!-- <img src="/assets/images/cat-01.png" class="banner-image"> -->
+  <img src="assets/hyattplaza-images/blog/banner2.png" class="banner-image original-size" >  
+  
+    <div class="banner-box-shadow">
+      <div class="banner-title">
+      BLOG
+      </div>
+    </div>
+     
+  </div>
+
+  <div class="division">
+
+    <div class="main-blog brd">
+<h2><b>{{main_blog[0].title}}</b></h2>
+<p><b> {{main_blog[0].author}}</b></p>
+<p>{{main_blog[0].blog_des}}</p>
+
+<div class="categories-slider">
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let category of categories" class="slide record">
+        <img [src]="category.image" class="category-image">
+
+        <div class="category-details">
+         
+        </div>
+        <div class="category-title">
+            {{category.title}}
+          </div>
+      </div>
+    </ngx-slick>
+    <p class="txt">Erat erat dolor At sanctus lorem voluptua sed sea et, est justo no justo rebum eos, ut amet amet sadipscing vero dolore diam.. lorem clita lorem clita magna amet takimata. Diam labore et et sit sed kasd lorem, est sed.</p>
+  </div>
+
+  <h6><b>Share: &nbsp;</b>  
+    <!-- <img class="icon" src="assets/hyattplaza-images/social-media-icons/facebook.png">
+    <img class="icon"  src="assets/hyattplaza-images/social-media-icons/whatsapp.png">
+    <img class="icon"  src="assets/hyattplaza-images/social-media-icons/twitter.png">
+    <img class="icon"  src="assets/hyattplaza-images/social-media-icons/instagram.png">
+    -->
+
+    <!-- SHare -->
+
+<a href="https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwildherbstechnologies.com%2Fdemos%2Fhyattplaza-beta-version%2Fevents&amp;linkname=HyattPlaza%20events" target="_blank"> <img class="icon" src="assets/hyattplaza-images/social-media-icons/facebook.png"></a>
+<a href="https://www.addtoany.com/add_to/whatsapp?linkurl=http%3A%2F%2Fwildherbstechnologies.com%2Fdemos%2Fhyattplaza-beta-version%2Fevents&amp;linkname=HyattPlaza%20events" target="_blank">
+
+<img class="icon"  src="assets/hyattplaza-images/social-media-icons/whatsapp.png"></a>
+ <a href="https://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwildherbstechnologies.com%2Fdemos%2Fhyattplaza-beta-version%2Fevents&amp;linkname=HyattPlaza%20events" target="_blank">
+ 
+ <img class="icon"  src="assets/hyattplaza-images/social-media-icons/twitter.png">
+</a>
+<a href="https://www.instagram.com/hyattplaza/" target="_blank">
+ <img class="icon"  src="assets/hyattplaza-images/social-media-icons/instagram.png">
+ </a>
+<!-- END SHARE -->
+
+    <!-- <i class="fab fa-whatsapp-square"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i> -->
+  </h6>
+    </div>
+    
+ 
+
+    
+    
+    
+    
+    <div class="related-blog">
+         
+        
+
+<h4>Related Blogs</h4>
+<div class="rl-bg-rw">
+     
+  <div class="blg1">
+    <img src="{{blogs[0].img}}" style="width:100%;">
+    <p><b>{{blogs[0].time}}</b></p>
+    <hr />
+    <p>{{blogs[0].des}}</p>
+
+  </div>
+  <div class="blg2">
+  <img src="{{blogs[1].img}}" style="width:100%;">  
+  <p><b>{{blogs[0].time}}</b></p>
+  <hr />
+    <p>{{blogs[0].des}}</p>
+  </div>
+   
+   
+</div>
+<div class="ex-btn" style="text-align:center;" >
+    <button class="cus-btn comm button-common-style" routerLink="/blog">EXPLORE MORE</button>
+</div>
+
+    </div>
+
+  </div>

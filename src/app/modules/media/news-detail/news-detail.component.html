@@ -1,0 +1,68 @@
+<div class="page-banner">
+  <!-- <img src="/assets/images/cat-01.png" class="banner-image"> -->
+<img src="assets/hyattplaza-images/news/banner.png" class="banner-image original-size" >  
+
+  <div class="banner-box-shadow">
+    <div class="banner-title">
+    MEDIA DETAILS
+    </div>
+  </div>
+   
+</div>
+
+<div class="division">
+
+  <div class="main-blog brd">
+<h2>{{main_blog[0].title}}</h2>
+<p>{{main_blog[0].author}}</p>
+<p>{{main_blog[0].blog_des}}</p>
+
+<div class="categories-slider">
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let category of categories" class="slide record">
+      <img [src]="category.image" class="category-image">
+
+      <div class="category-details">
+       
+      </div>
+      <div class="category-title">
+          {{category.title}}
+        </div>
+    </div>
+  </ngx-slick>
+</div>
+
+  </div>
+
+  
+  
+  
+  
+  <div class="related-blog">
+      
+
+<h4>Related Blogs</h4>
+<div class="rl-bg-rw">
+<div class="blg1">
+  <img src="{{blogs[0].img}}" style="width:100%;">
+  <p>{{blogs[0].time}}</p>
+  <hr />
+  <p>{{blogs[0].des}}</p>
+
+</div>
+<div class="blg2">
+<img src="{{blogs[1].img}}" style="width:100%;">  
+<p><b>{{blogs[0].time}}</b></p>
+<hr />
+  <p>{{blogs[0].des}}</p>
+</div>
+ 
+ 
+</div>
+<div style="text-align:center;" >
+  <button class="cus-btn blg-btn button-common-style" routerLink="/media">EXPLORE MORE</button>
+</div>
+
+  </div>
+
+</div>

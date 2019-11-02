@@ -1,0 +1,176 @@
+<div class="page-banner">
+        <img src="{{ (pageBannerLoaded ? pageBanner.cover : '') }}" class="banner-image">
+        <div class="banner-box-shadow">
+          <div class="banner-title">
+            {{ (pageBannerLoaded ? pageBanner.title : '') }}
+          </div>
+        </div>
+        <div class="banner-search">
+          <div class="search-boxes">
+            <select  [(ngModel)]="selectedCategory" class="search-select" name="category">
+              <option value="0">Select Category</option>
+              <option *ngFor="let option of dropDownCategories.data" [value]="option.id">{{ option.name }}</option>
+            </select>
+            <input type="text" class="search-text" name="search">
+            <div class='search-button'>
+              <img src="/assets/icons/search.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="category-selector">
+        <img src="/assets/images/cat-02.png" class="category-image">
+        <div class="category-image-shadow">
+          <div href="#" [ngClass]="categoryBlock ? 'category-button-white' : 'category-button-black'" class="category-button-white"><a class="btn"><span (click)="toggleBlock('category-block')">CATEGORIES</span></a></div>
+          <div class="category-button-separator">
+            <img src="/assets/icons/Path_118.png">
+          </div>
+          <div href="#" [ngClass]="brandBlock ? 'category-button-white margL20' : 'category-button-black'"><a class="btn"><span (click)="toggleBlock('brand-block')">BRANDS</span></a></div>
+        </div>
+      </div>
+
+      <div class="categories container" *ngIf="categoryBlock" >
+        <div class="categories-title ">
+          CATEGORIES
+        </div>
+
+        <div class="categories-slider mob-hide">
+          <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+            <div ngxSlickItem *ngFor="let category of dropDownCategories.data" class="slide record">
+              <img [src]="category.image" class="category-image">
+      
+              <div class="category-details">
+               
+              </div>
+              <div class="category-title slider-title-size">
+                  {{category.name}}
+                </div>
+            </div>
+          </ngx-slick>
+        </div>
+
+           <!-- MOBILE DISPLAY SLIDER -->
+ 
+           <div class="categories-slider desk-hide">
+            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfigmob">
+              <div ngxSlickItem *ngFor="let category of dropDownCategories.data" class="slide record">
+                <img [src]="category.image" class="category-image">
+        
+                <div class="category-details">
+                 
+                </div>
+                <div class="category-title slider-title-size">
+                    {{category.name}}
+                  </div>
+              </div>
+            </ngx-slick>
+          </div>
+  
+  <!-- END MOBILE  SLIDER -->
+      
+      </div>
+
+      <div class="stories-images container" *ngIf="categoryBlock && featuredItems" >
+        <div class="stories-title">
+          FEATURED STORES
+        </div>
+        <div class="row home-mb-section">
+          <div class="col-6 home-mb-section-sub" *ngIf="featuredItems[0]">
+            <img src="{{featuredItems[0].store_image}}">
+            <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_245.png');background-size: cover;">
+              <div class="image-caption">
+                <div class="image-caption-elarge">
+                  <p class="custom-tag">{{featuredItems[0].subCategoryName}}</p>
+                  <p class="custom-title" innerHTML="{{featuredItems[0].name}}"></p>
+                  <div class="link-button button-common-style">
+                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[0].id]"> EXPLORE MORE </a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 home-mb-section-sub"  *ngIf="featuredItems[1]">
+            <img src="{{featuredItems[1].store_image}}">
+            <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_244.png');background-size: cover;">
+              <div class="image-caption">
+                <div class="image-caption-elarge">
+                  <p class="tag">{{featuredItems[1].subCategoryName}}</p>
+                  <p class="custom-title" innerHTML="{{featuredItems[1].name}}"></p>
+                  <div class="link-button button-common-style">
+                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[1].id]"> EXPLORE MORE </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row home-mb-section">
+          <div class="col-7 home-mb-section-sub"  *ngIf="featuredItems[2]">
+            <img src="{{featuredItems[2].store_image}}">
+            <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_242.png');background-size: cover;">
+              <div class="image-caption">
+                <div class="image-caption-large">
+                  <p class="tag">{{featuredItems[2].subCategoryName}}</p>
+                  <p class="custom-title" innerHTML="{{featuredItems[2].name}}"></p>
+                  <div class="link-button button-common-style">
+                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[2].id]"> EXPLORE MORE </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5 home-mb-section-sub"  *ngIf="featuredItems[3]">
+            <img src="{{featuredItems[3].store_image}}">
+            <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_113.png');background-size: cover;">
+              <div class="image-caption">
+                <div class="image-caption-small">
+                  <p class="tag">{{featuredItems[3].subCategoryName}}</p>
+                  <p class="custom-title" innerHTML="{{featuredItems[3].name}}"></p>
+                  <div class="link-button button-common-style">
+                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[3].id]"> EXPLORE MORE </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row home-mb-section">
+          <div class="col-5 home-mb-section-sub" *ngIf="featuredItems[4]">
+            <img src="{{featuredItems[4].store_image}}">
+            <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_140.png');background-size: cover;">
+              <div class="image-caption">
+                <div class="image-caption-small">
+                  <p class="tag">{{featuredItems[4].subCategoryName}}</p>
+                  <p class="custom-title" innerHTML="{{featuredItems[4].name}}"></p>
+                  <div class="link-button button-common-style">
+                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[4].id]"> EXPLORE MORE </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 home-mb-section-sub" *ngIf="featuredItems[5]">
+            <img src="{{featuredItems[5].store_image}}">
+            <div class="stories-image-content" style="background-image: url('/assets/icons/Rectangle_243.png');background-size: cover;">
+              <div class="image-caption">
+                <div class="image-caption-large">
+                  <p class="tag">{{featuredItems[5].subCategoryName}}</p>
+                  <p class="custom-title" innerHTML="{{featuredItems[5].name}}"></p>
+                  <div class="link-button button-common-style">
+                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[5].id]"> EXPLORE MORE </a>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories container" *ngIf="brandBlock" >
+        <div class="categories-title">
+          BRANDS
+        </div>
+        <div class="border-box" *ngFor="let brand of brandLogs">
+          <img [src]="brand.logo" />
+        </div>
+      </div>
