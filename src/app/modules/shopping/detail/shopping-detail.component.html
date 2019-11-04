@@ -45,7 +45,7 @@
 
   <!-- KRISHNA EXPORT PAGE -->
 
-  <div class="s-b-s">
+  <div class="s-b-s mob-hide ">
 
     <div class="item brd">
       <div class="shp-mar">
@@ -96,7 +96,7 @@
           
          <div class="text-block" style="text-align:center;">
         
-           <button class="ct-bt" routerLink="/vip-card">Buy Online</button>
+           <button class="ct-bt"  routerLink="/vip-card">Buy Online</button>
                 
            </div>
           
@@ -114,3 +114,55 @@
    
    
   <!-- END EXPORTED -->
+ 
+ 
+  <div class="desk-hide">
+
+    <div class="row-section">
+ 
+      <div class="item3">
+          <h3 class="ev-hed " style="text-align:center; font-size: 19px!important;"><b>{{ shopDetail[0].title }}</b> </h3>
+          <div class="in-li-mr" style="text-align:left;">
+            <p class="inli"><i class="fa fa-map-marker"></i> {{ shopDetail[0].location }} &nbsp; |</p>
+             <p class="inli"><i class="fa fa-phone" aria-hidden="true"></i> {{ shopDetail[0].phone }} &nbsp; |</p>
+        
+         <p class="inli"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ shopDetail[0].time }}</p>
+   <p>{{ shopDetail[0].description }}</p>
+          
+
+      </div>
+
+       
+
+    
+    </div>
+    <div class="item3">
+       
+   
+   
+        <div class="img1">
+            <div style="text-align:center;">
+          <img class="ev-img" [src]="shopDetail[0].vip_card" style="width:100%;" >
+          
+             
+            <div class="text-block" style="text-align:center;">
+           
+              <button class="ct-bt" routerLink="/vip-card">Buy Online</button>
+                   
+              </div>
+             
+          </div>
+        </div>
+      
+        <br>
+      
+        <div class="img2"> 
+          <img class="ev-img" [src]="shopDetail[0].map" style="width:100%;" >
+        </div>
+      
+      </div>
+     
+
+
+ </div>
+ <br>

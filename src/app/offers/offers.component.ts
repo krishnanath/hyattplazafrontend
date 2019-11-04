@@ -32,6 +32,14 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class NgbdModalContent {
   @Input() name;
+  @Input() offerImage;
+  @Input() offerSubtitle;
+  @Input() offerTitle;
+@Input() offerStore;
+  @Input() offerDescription;
+
+
+
 
   constructor(public activeModal: NgbActiveModal, private router: Router) {}
   gotoStore(store) {
@@ -49,7 +57,7 @@ export class OffersComponent implements OnInit {
 
   constructor(private pageService: PageService,
     private modalService: NgbModal) { }
-  offers: Array<string> = [];
+  offers: any = [];
   banner = '';
   pageTitle = '';
   ngOnInit() {

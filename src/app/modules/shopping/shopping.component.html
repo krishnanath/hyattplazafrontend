@@ -82,9 +82,9 @@
                 <div class="image-caption-elarge">
                   <p class="custom-tag">{{featuredItems[0].subCategoryName}}</p>
                   <p class="custom-title" innerHTML="{{featuredItems[0].name}}"></p>
-                  <div class="link-button button-common-style">
-                    <a class="custom-router-link" [routerLink] = "['detail', featuredItems[0].id]"> EXPLORE MORE </a>
-                </div>
+                 <button class="link-button button-common-style" [routerLink] = "['detail', featuredItems[0].id]">  <a class="custom-router-link" [routerLink] = "['detail', featuredItems[0].id]">
+          EXPLORE MORE </a>
+                 </button>
                 </div>
               </div>
             </div>
@@ -96,9 +96,9 @@
                 <div class="image-caption-elarge">
                   <p class="tag">{{featuredItems[1].subCategoryName}}</p>
                   <p class="custom-title" innerHTML="{{featuredItems[1].name}}"></p>
-                  <div class="link-button button-common-style">
+                  <button class="link-button button-common-style" [routerLink] = "['detail', featuredItems[0].id]">
                     <a class="custom-router-link" [routerLink] = "['detail', featuredItems[1].id]"> EXPLORE MORE </a>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>

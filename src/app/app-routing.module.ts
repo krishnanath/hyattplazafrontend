@@ -85,7 +85,7 @@ const routes: Routes = [
     component: EventDetailComponent
   },
   {
-    path: 'guest-services',
+    path: 'guestservices',
     component: GuestservicesComponent
   },
  

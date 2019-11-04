@@ -21,6 +21,13 @@ export class ShoppingDetailComponent implements OnInit {
     slidesToShow: 3,
     slidesToScroll: 3
   };
+  slideConfigmob = {
+    dots: false,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
 
   constructor(
      private commonService: CommonService,
